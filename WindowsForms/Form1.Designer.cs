@@ -52,26 +52,33 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(292, 42);
+            this.panel1.Size = new System.Drawing.Size(438, 63);
             this.panel1.TabIndex = 0;
             // 
             // lin
             // 
             this.lin.AutoSize = true;
-            this.lin.Location = new System.Drawing.Point(220, 7);
+            this.lin.Location = new System.Drawing.Point(330, 11);
+            this.lin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lin.Name = "lin";
-            this.lin.Size = new System.Drawing.Size(40, 16);
+<<<<<<< HEAD
+            this.lin.Size = new System.Drawing.Size(65, 25);
+=======
+            this.lin.Size = new System.Drawing.Size(53, 16);
+>>>>>>> caf26a07b5971ac765c04734224fe72690397723
             this.lin.TabIndex = 3;
             this.lin.TabStop = true;
-            this.lin.Text = "Login";
+            this.lin.Text = "Sign-up";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-2, -2);
+            this.pictureBox2.Location = new System.Drawing.Point(-3, -3);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(106, 42);
+            this.pictureBox2.Size = new System.Drawing.Size(159, 66);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -79,9 +86,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(107, 65);
+            this.pictureBox1.Location = new System.Drawing.Point(160, 102);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 129);
+            this.pictureBox1.Size = new System.Drawing.Size(150, 202);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -90,9 +98,10 @@
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(12, 227);
+            this.textBox1.Location = new System.Drawing.Point(18, 355);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 15);
+            this.textBox1.Size = new System.Drawing.Size(150, 24);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "Username";
             // 
@@ -100,54 +109,61 @@
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(12, 276);
+            this.textBox2.Location = new System.Drawing.Point(18, 431);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 15);
+            this.textBox2.Size = new System.Drawing.Size(150, 24);
             this.textBox2.TabIndex = 3;
             this.textBox2.Text = "Password";
             // 
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox3.Location = new System.Drawing.Point(141, 227);
+            this.textBox3.Location = new System.Drawing.Point(212, 355);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(149, 22);
+            this.textBox3.Size = new System.Drawing.Size(222, 31);
             this.textBox3.TabIndex = 4;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox4.Location = new System.Drawing.Point(141, 276);
+            this.textBox4.Location = new System.Drawing.Point(212, 431);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(149, 22);
+            this.textBox4.Size = new System.Drawing.Size(222, 31);
             this.textBox4.TabIndex = 5;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button1.Location = new System.Drawing.Point(90, 386);
+            this.button1.Location = new System.Drawing.Point(135, 603);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 35);
+            this.button1.Size = new System.Drawing.Size(112, 55);
             this.button1.TabIndex = 6;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(182, 319);
+            this.linkLabel2.Location = new System.Drawing.Point(273, 498);
+            this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(108, 16);
+            this.linkLabel2.Size = new System.Drawing.Size(172, 25);
             this.linkLabel2.TabIndex = 7;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Forget password";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(292, 450);
+            this.ClientSize = new System.Drawing.Size(438, 703);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox4);
@@ -156,6 +172,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
