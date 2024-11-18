@@ -61,10 +61,10 @@
             this.lin.AutoSize = true;
             this.lin.Location = new System.Drawing.Point(220, 7);
             this.lin.Name = "lin";
-            this.lin.Size = new System.Drawing.Size(40, 16);
+            this.lin.Size = new System.Drawing.Size(53, 16);
             this.lin.TabIndex = 3;
             this.lin.TabStop = true;
-            this.lin.Text = "Login";
+            this.lin.Text = "Sign-up";
             // 
             // pictureBox2
             // 
