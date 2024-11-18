@@ -52,8 +52,12 @@ namespace WindowsForms
             Form2 signUpForm = new Form2();
             signUpForm.Show();
         }
-        
+
+        private void textBox3_TextChanged_1(object sender, EventArgs e)
+        {
+            //explaining
         }
+    }
     }
     
 
