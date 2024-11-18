@@ -16,5 +16,10 @@ namespace WindowsForms
         {
             InitializeComponent();
         }
+        public class SignUpForm : Form
+        {
+            
+            
+        }
     }
 }

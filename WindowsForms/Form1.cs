@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static WindowsForms.Form2;
 
 namespace WindowsForms
 {
@@ -40,9 +41,22 @@ namespace WindowsForms
 
         }
 
+        private void lin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
+        }
+        
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 signUpForm = new Form2();
+            signUpForm.Show();
+        }
         
         }
     }
+    
+
 
     
 
