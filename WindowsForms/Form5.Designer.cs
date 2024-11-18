@@ -119,7 +119,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1074, 692);
+            this.dataGridView1.Size = new System.Drawing.Size(812, 692);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -132,7 +132,7 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1053, 63);
+            this.dataGridView2.Size = new System.Drawing.Size(780, 63);
             this.dataGridView2.TabIndex = 1;
             // 
             // dataGridView3
@@ -155,7 +155,7 @@
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.RowHeadersWidth = 51;
             this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.Size = new System.Drawing.Size(868, 159);
+            this.dataGridView4.Size = new System.Drawing.Size(596, 159);
             this.dataGridView4.TabIndex = 3;
             // 
             // dataGridView5
@@ -166,7 +166,7 @@
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.RowHeadersWidth = 51;
             this.dataGridView5.RowTemplate.Height = 24;
-            this.dataGridView5.Size = new System.Drawing.Size(868, 173);
+            this.dataGridView5.Size = new System.Drawing.Size(606, 173);
             this.dataGridView5.TabIndex = 4;
             // 
             // dataGridView6
@@ -176,7 +176,7 @@
             this.dataGridView6.Name = "dataGridView6";
             this.dataGridView6.RowHeadersWidth = 51;
             this.dataGridView6.RowTemplate.Height = 24;
-            this.dataGridView6.Size = new System.Drawing.Size(868, 193);
+            this.dataGridView6.Size = new System.Drawing.Size(606, 193);
             this.dataGridView6.TabIndex = 5;
             // 
             // pictureBox1
@@ -284,7 +284,7 @@
             this.dataGridView7.Name = "dataGridView7";
             this.dataGridView7.RowHeadersWidth = 51;
             this.dataGridView7.RowTemplate.Height = 24;
-            this.dataGridView7.Size = new System.Drawing.Size(231, 131);
+            this.dataGridView7.Size = new System.Drawing.Size(142, 131);
             this.dataGridView7.TabIndex = 18;
             // 
             // dataGridView8
@@ -292,11 +292,11 @@
             this.dataGridView8.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView8.Location = new System.Drawing.Point(557, 104);
+            this.dataGridView8.Location = new System.Drawing.Point(459, 104);
             this.dataGridView8.Name = "dataGridView8";
             this.dataGridView8.RowHeadersWidth = 51;
             this.dataGridView8.RowTemplate.Height = 24;
-            this.dataGridView8.Size = new System.Drawing.Size(235, 131);
+            this.dataGridView8.Size = new System.Drawing.Size(166, 131);
             this.dataGridView8.TabIndex = 19;
             // 
             // dataGridView9
@@ -304,11 +304,11 @@
             this.dataGridView9.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView9.Location = new System.Drawing.Point(811, 104);
+            this.dataGridView9.Location = new System.Drawing.Point(631, 104);
             this.dataGridView9.Name = "dataGridView9";
             this.dataGridView9.RowHeadersWidth = 51;
             this.dataGridView9.RowTemplate.Height = 24;
-            this.dataGridView9.Size = new System.Drawing.Size(240, 131);
+            this.dataGridView9.Size = new System.Drawing.Size(146, 131);
             this.dataGridView9.TabIndex = 20;
             // 
             // dataGridView10
@@ -320,7 +320,7 @@
             this.dataGridView10.Name = "dataGridView10";
             this.dataGridView10.RowHeadersWidth = 51;
             this.dataGridView10.RowTemplate.Height = 24;
-            this.dataGridView10.Size = new System.Drawing.Size(228, 144);
+            this.dataGridView10.Size = new System.Drawing.Size(150, 144);
             this.dataGridView10.TabIndex = 21;
             // 
             // dataGridView11
@@ -328,11 +328,11 @@
             this.dataGridView11.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView11.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView11.Location = new System.Drawing.Point(552, 301);
+            this.dataGridView11.Location = new System.Drawing.Point(475, 301);
             this.dataGridView11.Name = "dataGridView11";
             this.dataGridView11.RowHeadersWidth = 51;
             this.dataGridView11.RowTemplate.Height = 24;
-            this.dataGridView11.Size = new System.Drawing.Size(240, 144);
+            this.dataGridView11.Size = new System.Drawing.Size(155, 144);
             this.dataGridView11.TabIndex = 22;
             // 
             // dataGridView12
@@ -340,11 +340,11 @@
             this.dataGridView12.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView12.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView12.Location = new System.Drawing.Point(811, 301);
+            this.dataGridView12.Location = new System.Drawing.Point(642, 301);
             this.dataGridView12.Name = "dataGridView12";
             this.dataGridView12.RowHeadersWidth = 51;
             this.dataGridView12.RowTemplate.Height = 24;
-            this.dataGridView12.Size = new System.Drawing.Size(240, 144);
+            this.dataGridView12.Size = new System.Drawing.Size(150, 144);
             this.dataGridView12.TabIndex = 23;
             // 
             // dataGridView13
@@ -356,7 +356,7 @@
             this.dataGridView13.Name = "dataGridView13";
             this.dataGridView13.RowHeadersWidth = 51;
             this.dataGridView13.RowTemplate.Height = 24;
-            this.dataGridView13.Size = new System.Drawing.Size(228, 150);
+            this.dataGridView13.Size = new System.Drawing.Size(150, 150);
             this.dataGridView13.TabIndex = 24;
             // 
             // dataGridView14
@@ -364,11 +364,11 @@
             this.dataGridView14.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView14.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView14.Location = new System.Drawing.Point(552, 506);
+            this.dataGridView14.Location = new System.Drawing.Point(475, 506);
             this.dataGridView14.Name = "dataGridView14";
             this.dataGridView14.RowHeadersWidth = 51;
             this.dataGridView14.RowTemplate.Height = 24;
-            this.dataGridView14.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView14.Size = new System.Drawing.Size(155, 150);
             this.dataGridView14.TabIndex = 25;
             // 
             // dataGridView15
@@ -376,11 +376,11 @@
             this.dataGridView15.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView15.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView15.Location = new System.Drawing.Point(811, 506);
+            this.dataGridView15.Location = new System.Drawing.Point(642, 506);
             this.dataGridView15.Name = "dataGridView15";
             this.dataGridView15.RowHeadersWidth = 51;
             this.dataGridView15.RowTemplate.Height = 24;
-            this.dataGridView15.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView15.Size = new System.Drawing.Size(150, 150);
             this.dataGridView15.TabIndex = 26;
             // 
             // textBox4
@@ -397,7 +397,7 @@
             // 
             this.textBox5.BackColor = System.Drawing.Color.LightGray;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Location = new System.Drawing.Point(566, 116);
+            this.textBox5.Location = new System.Drawing.Point(475, 116);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 15);
             this.textBox5.TabIndex = 28;
@@ -407,7 +407,7 @@
             // 
             this.textBox6.BackColor = System.Drawing.Color.LightGray;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Location = new System.Drawing.Point(828, 116);
+            this.textBox6.Location = new System.Drawing.Point(642, 116);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 15);
             this.textBox6.TabIndex = 29;
@@ -420,7 +420,7 @@
             this.textBox7.Location = new System.Drawing.Point(318, 137);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(151, 22);
+            this.textBox7.Size = new System.Drawing.Size(129, 22);
             this.textBox7.TabIndex = 30;
             this.textBox7.Text = "Status: Non-member";
             // 
@@ -428,7 +428,7 @@
             // 
             this.textBox8.BackColor = System.Drawing.Color.LightGray;
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Location = new System.Drawing.Point(566, 137);
+            this.textBox8.Location = new System.Drawing.Point(475, 137);
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(138, 22);
@@ -440,7 +440,7 @@
             this.textBox9.BackColor = System.Drawing.Color.LightGray;
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox9.ForeColor = System.Drawing.Color.Black;
-            this.textBox9.Location = new System.Drawing.Point(828, 133);
+            this.textBox9.Location = new System.Drawing.Point(642, 137);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(110, 15);
             this.textBox9.TabIndex = 32;
@@ -461,7 +461,7 @@
             // 
             this.textBox11.BackColor = System.Drawing.Color.LightGray;
             this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Location = new System.Drawing.Point(566, 165);
+            this.textBox11.Location = new System.Drawing.Point(475, 165);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(100, 15);
             this.textBox11.TabIndex = 34;
@@ -471,7 +471,7 @@
             // 
             this.textBox12.BackColor = System.Drawing.Color.LightGray;
             this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Location = new System.Drawing.Point(828, 154);
+            this.textBox12.Location = new System.Drawing.Point(642, 165);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(100, 15);
             this.textBox12.TabIndex = 35;
@@ -496,7 +496,7 @@
             this.linkLabel9.AutoSize = true;
             this.linkLabel9.BackColor = System.Drawing.Color.LightGray;
             this.linkLabel9.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel9.Location = new System.Drawing.Point(719, 204);
+            this.linkLabel9.Location = new System.Drawing.Point(534, 204);
             this.linkLabel9.Name = "linkLabel9";
             this.linkLabel9.Size = new System.Drawing.Size(41, 16);
             this.linkLabel9.TabIndex = 37;
@@ -508,7 +508,7 @@
             this.linkLabel10.AutoSize = true;
             this.linkLabel10.BackColor = System.Drawing.Color.LightGray;
             this.linkLabel10.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel10.Location = new System.Drawing.Point(978, 204);
+            this.linkLabel10.Location = new System.Drawing.Point(701, 204);
             this.linkLabel10.Name = "linkLabel10";
             this.linkLabel10.Size = new System.Drawing.Size(41, 16);
             this.linkLabel10.TabIndex = 38;
@@ -520,7 +520,7 @@
             this.linkLabel11.AutoSize = true;
             this.linkLabel11.BackColor = System.Drawing.Color.LightGray;
             this.linkLabel11.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel11.Location = new System.Drawing.Point(437, 411);
+            this.linkLabel11.Location = new System.Drawing.Point(359, 411);
             this.linkLabel11.Name = "linkLabel11";
             this.linkLabel11.Size = new System.Drawing.Size(59, 16);
             this.linkLabel11.TabIndex = 39;
@@ -532,7 +532,7 @@
             this.linkLabel12.AutoSize = true;
             this.linkLabel12.BackColor = System.Drawing.Color.LightGray;
             this.linkLabel12.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel12.Location = new System.Drawing.Point(701, 411);
+            this.linkLabel12.Location = new System.Drawing.Point(532, 411);
             this.linkLabel12.Name = "linkLabel12";
             this.linkLabel12.Size = new System.Drawing.Size(59, 16);
             this.linkLabel12.TabIndex = 40;
@@ -544,7 +544,7 @@
             this.linkLabel13.AutoSize = true;
             this.linkLabel13.BackColor = System.Drawing.Color.LightGray;
             this.linkLabel13.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel13.Location = new System.Drawing.Point(960, 411);
+            this.linkLabel13.Location = new System.Drawing.Point(701, 411);
             this.linkLabel13.Name = "linkLabel13";
             this.linkLabel13.Size = new System.Drawing.Size(59, 16);
             this.linkLabel13.TabIndex = 41;
@@ -579,7 +579,7 @@
             // 
             this.textBox14.BackColor = System.Drawing.Color.LightGray;
             this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox14.Location = new System.Drawing.Point(557, 314);
+            this.textBox14.Location = new System.Drawing.Point(491, 314);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(100, 15);
             this.textBox14.TabIndex = 47;
@@ -589,7 +589,7 @@
             // 
             this.textBox15.BackColor = System.Drawing.Color.LightGray;
             this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox15.Location = new System.Drawing.Point(828, 314);
+            this.textBox15.Location = new System.Drawing.Point(652, 314);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(100, 15);
             this.textBox15.TabIndex = 48;
@@ -610,7 +610,7 @@
             // 
             this.textBox17.BackColor = System.Drawing.Color.LightGray;
             this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox17.Location = new System.Drawing.Point(557, 347);
+            this.textBox17.Location = new System.Drawing.Point(491, 347);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(100, 15);
             this.textBox17.TabIndex = 50;
@@ -620,7 +620,7 @@
             // 
             this.textBox18.BackColor = System.Drawing.Color.LightGray;
             this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox18.Location = new System.Drawing.Point(828, 344);
+            this.textBox18.Location = new System.Drawing.Point(652, 344);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(100, 15);
             this.textBox18.TabIndex = 51;
@@ -641,7 +641,7 @@
             // 
             this.textBox20.BackColor = System.Drawing.Color.LightGray;
             this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox20.Location = new System.Drawing.Point(557, 379);
+            this.textBox20.Location = new System.Drawing.Point(491, 368);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(100, 15);
             this.textBox20.TabIndex = 53;
@@ -652,7 +652,7 @@
             // 
             this.textBox21.BackColor = System.Drawing.Color.LightGray;
             this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox21.Location = new System.Drawing.Point(828, 366);
+            this.textBox21.Location = new System.Drawing.Point(652, 365);
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(100, 15);
             this.textBox21.TabIndex = 54;
@@ -683,7 +683,7 @@
             // 
             this.textBox25.BackColor = System.Drawing.Color.LightGray;
             this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox25.Location = new System.Drawing.Point(557, 518);
+            this.textBox25.Location = new System.Drawing.Point(491, 518);
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(100, 15);
             this.textBox25.TabIndex = 58;
@@ -693,10 +693,10 @@
             // 
             this.textBox26.BackColor = System.Drawing.Color.LightGray;
             this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox26.Location = new System.Drawing.Point(557, 541);
+            this.textBox26.Location = new System.Drawing.Point(491, 541);
             this.textBox26.Multiline = true;
             this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(147, 22);
+            this.textBox26.Size = new System.Drawing.Size(134, 22);
             this.textBox26.TabIndex = 59;
             this.textBox26.Text = "Subscription: Added";
             // 
@@ -704,7 +704,7 @@
             // 
             this.textBox28.BackColor = System.Drawing.Color.LightGray;
             this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox28.Location = new System.Drawing.Point(828, 515);
+            this.textBox28.Location = new System.Drawing.Point(652, 518);
             this.textBox28.Name = "textBox28";
             this.textBox28.Size = new System.Drawing.Size(100, 15);
             this.textBox28.TabIndex = 61;
@@ -714,7 +714,7 @@
             // 
             this.textBox29.BackColor = System.Drawing.Color.LightGray;
             this.textBox29.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox29.Location = new System.Drawing.Point(828, 541);
+            this.textBox29.Location = new System.Drawing.Point(652, 541);
             this.textBox29.Multiline = true;
             this.textBox29.Name = "textBox29";
             this.textBox29.Size = new System.Drawing.Size(121, 22);
@@ -814,7 +814,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1914, 1055);
+            this.ClientSize = new System.Drawing.Size(1696, 852);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
