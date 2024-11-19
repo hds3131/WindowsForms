@@ -61,5 +61,25 @@ namespace WindowsForms
         {
 
         }
+
+        private void dataGridView22_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView21_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void textBox35_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox50_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
