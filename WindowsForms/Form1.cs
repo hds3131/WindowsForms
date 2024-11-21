@@ -55,7 +55,12 @@ namespace WindowsForms
 
         private void textBox3_TextChanged_1(object sender, EventArgs e)
         {
-            //explaining
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
     }
