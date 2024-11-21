@@ -56,7 +56,7 @@ namespace WindowsForms
             string username = textBox3.Text;
             string password = textBox4.Text;
 
-            // Simple validation (Replace with your own logic)
+            
             if (username == "admin" && password == "password")
             {
                 MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
