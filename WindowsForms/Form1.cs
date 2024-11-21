@@ -15,7 +15,7 @@ namespace WindowsForms
     {
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();//hi amy
         }
 
 
