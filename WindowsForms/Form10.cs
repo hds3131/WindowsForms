@@ -10,24 +10,19 @@ using System.Windows.Forms;
 
 namespace WindowsForms
 {
-    public partial class Form9 : Form
+    public partial class Form10 : Form
     {
-        public Form9()
+        public Form10()
         {
             InitializeComponent();
         }
 
-        private void Form9_Load(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
+        private void textBox8_TextChanged(object sender, EventArgs e)
         {
 
         }
