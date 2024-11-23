@@ -39,9 +39,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
             this.dataGridView8 = new System.Windows.Forms.DataGridView();
             this.dataGridView9 = new System.Windows.Forms.DataGridView();
@@ -142,7 +139,7 @@
             this.dataGridView3.BackgroundColor = System.Drawing.Color.IndianRed;
             this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(12, 91);
+            this.dataGridView3.Location = new System.Drawing.Point(8, 91);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.RowTemplate.Height = 24;
@@ -226,49 +223,6 @@
             this.textBox3.Size = new System.Drawing.Size(143, 21);
             this.textBox3.TabIndex = 14;
             this.textBox3.Text = "Password: ";
-            // 
-            // linkLabel5
-            // 
-            this.linkLabel5.AutoSize = true;
-            this.linkLabel5.BackColor = System.Drawing.Color.Gainsboro;
-            this.linkLabel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.linkLabel5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel5.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel5.Location = new System.Drawing.Point(24, 433);
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(141, 25);
-            this.linkLabel5.TabIndex = 15;
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "Reset Admin Id";
-            // 
-            // linkLabel6
-            // 
-            this.linkLabel6.AutoSize = true;
-            this.linkLabel6.BackColor = System.Drawing.Color.Gainsboro;
-            this.linkLabel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.linkLabel6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel6.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel6.Location = new System.Drawing.Point(39, 536);
-            this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.Size = new System.Drawing.Size(104, 25);
-            this.linkLabel6.TabIndex = 16;
-            this.linkLabel6.TabStop = true;
-            this.linkLabel6.Text = "Reset Mail";
-            this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked);
-            // 
-            // linkLabel7
-            // 
-            this.linkLabel7.AutoSize = true;
-            this.linkLabel7.BackColor = System.Drawing.Color.Gainsboro;
-            this.linkLabel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.linkLabel7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel7.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel7.Location = new System.Drawing.Point(24, 483);
-            this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.Size = new System.Drawing.Size(146, 25);
-            this.linkLabel7.TabIndex = 17;
-            this.linkLabel7.TabStop = true;
-            this.linkLabel7.Text = "Reset Password";
             // 
             // dataGridView7
             // 
@@ -553,7 +507,7 @@
             this.linkLabel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.linkLabel17.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel17.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel17.Location = new System.Drawing.Point(48, 589);
+            this.linkLabel17.Location = new System.Drawing.Point(39, 464);
             this.linkLabel17.Name = "linkLabel17";
             this.linkLabel17.Size = new System.Drawing.Size(86, 27);
             this.linkLabel17.TabIndex = 45;
@@ -880,9 +834,6 @@
             this.Controls.Add(this.dataGridView9);
             this.Controls.Add(this.dataGridView8);
             this.Controls.Add(this.dataGridView7);
-            this.Controls.Add(this.linkLabel7);
-            this.Controls.Add(this.linkLabel6);
-            this.Controls.Add(this.linkLabel5);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -930,9 +881,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.LinkLabel linkLabel5;
-        private System.Windows.Forms.LinkLabel linkLabel6;
-        private System.Windows.Forms.LinkLabel linkLabel7;
         private System.Windows.Forms.DataGridView dataGridView7;
         private System.Windows.Forms.DataGridView dataGridView8;
         private System.Windows.Forms.DataGridView dataGridView9;
