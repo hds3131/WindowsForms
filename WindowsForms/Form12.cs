@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsForms
 {
-    public partial class Form11 : Form
+    public partial class Form12 : Form
     {
-        public Form11()
+        public Form12()
         {
             InitializeComponent();
-        }
-
-        private void textBox9_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
         }
     }
 }

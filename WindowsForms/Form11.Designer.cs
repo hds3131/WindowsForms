@@ -68,6 +68,12 @@
             this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             this.linkLabel6 = new System.Windows.Forms.LinkLabel();
             this.linkLabel7 = new System.Windows.Forms.LinkLabel();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -456,7 +462,7 @@
             // 
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.BackColor = System.Drawing.Color.Tomato;
-            this.linkLabel2.Location = new System.Drawing.Point(451, 133);
+            this.linkLabel2.Location = new System.Drawing.Point(312, 134);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(54, 16);
             this.linkLabel2.TabIndex = 33;
@@ -467,7 +473,7 @@
             // 
             this.linkLabel3.AutoSize = true;
             this.linkLabel3.BackColor = System.Drawing.Color.Tomato;
-            this.linkLabel3.Location = new System.Drawing.Point(451, 158);
+            this.linkLabel3.Location = new System.Drawing.Point(312, 160);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(54, 16);
             this.linkLabel3.TabIndex = 34;
@@ -478,7 +484,7 @@
             // 
             this.linkLabel4.AutoSize = true;
             this.linkLabel4.BackColor = System.Drawing.Color.Tomato;
-            this.linkLabel4.Location = new System.Drawing.Point(451, 182);
+            this.linkLabel4.Location = new System.Drawing.Point(312, 186);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(54, 16);
             this.linkLabel4.TabIndex = 35;
@@ -489,7 +495,7 @@
             // 
             this.linkLabel5.AutoSize = true;
             this.linkLabel5.BackColor = System.Drawing.Color.Tomato;
-            this.linkLabel5.Location = new System.Drawing.Point(451, 210);
+            this.linkLabel5.Location = new System.Drawing.Point(312, 212);
             this.linkLabel5.Name = "linkLabel5";
             this.linkLabel5.Size = new System.Drawing.Size(54, 16);
             this.linkLabel5.TabIndex = 36;
@@ -500,7 +506,7 @@
             // 
             this.linkLabel6.AutoSize = true;
             this.linkLabel6.BackColor = System.Drawing.Color.Tomato;
-            this.linkLabel6.Location = new System.Drawing.Point(451, 236);
+            this.linkLabel6.Location = new System.Drawing.Point(312, 239);
             this.linkLabel6.Name = "linkLabel6";
             this.linkLabel6.Size = new System.Drawing.Size(54, 16);
             this.linkLabel6.TabIndex = 37;
@@ -518,12 +524,70 @@
             this.linkLabel7.TabStop = true;
             this.linkLabel7.Text = "Change";
             // 
+            // textBox22
+            // 
+            this.textBox22.BackColor = System.Drawing.Color.Tomato;
+            this.textBox22.Location = new System.Drawing.Point(388, 134);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(100, 22);
+            this.textBox22.TabIndex = 39;
+            // 
+            // textBox23
+            // 
+            this.textBox23.BackColor = System.Drawing.Color.Tomato;
+            this.textBox23.Location = new System.Drawing.Point(388, 162);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(100, 22);
+            this.textBox23.TabIndex = 40;
+            // 
+            // textBox24
+            // 
+            this.textBox24.BackColor = System.Drawing.Color.Tomato;
+            this.textBox24.Location = new System.Drawing.Point(388, 190);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(100, 22);
+            this.textBox24.TabIndex = 41;
+            // 
+            // textBox25
+            // 
+            this.textBox25.BackColor = System.Drawing.Color.Tomato;
+            this.textBox25.Location = new System.Drawing.Point(388, 218);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(100, 22);
+            this.textBox25.TabIndex = 42;
+            // 
+            // textBox26
+            // 
+            this.textBox26.BackColor = System.Drawing.Color.Tomato;
+            this.textBox26.Location = new System.Drawing.Point(388, 246);
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(100, 22);
+            this.textBox26.TabIndex = 43;
+            // 
+            // linkLabel8
+            // 
+            this.linkLabel8.AutoSize = true;
+            this.linkLabel8.BackColor = System.Drawing.Color.Tomato;
+            this.linkLabel8.Location = new System.Drawing.Point(502, 252);
+            this.linkLabel8.Name = "linkLabel8";
+            this.linkLabel8.Size = new System.Drawing.Size(39, 16);
+            this.linkLabel8.TabIndex = 44;
+            this.linkLabel8.TabStop = true;
+            this.linkLabel8.Text = "Save";
+            this.linkLabel8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel8_LinkClicked);
+            // 
             // Form11
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
             this.ClientSize = new System.Drawing.Size(628, 567);
+            this.Controls.Add(this.linkLabel8);
+            this.Controls.Add(this.textBox26);
+            this.Controls.Add(this.textBox25);
+            this.Controls.Add(this.textBox24);
+            this.Controls.Add(this.textBox23);
+            this.Controls.Add(this.textBox22);
             this.Controls.Add(this.linkLabel7);
             this.Controls.Add(this.linkLabel6);
             this.Controls.Add(this.linkLabel5);
@@ -618,5 +682,11 @@
         private System.Windows.Forms.LinkLabel linkLabel5;
         private System.Windows.Forms.LinkLabel linkLabel6;
         private System.Windows.Forms.LinkLabel linkLabel7;
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.LinkLabel linkLabel8;
     }
 }
