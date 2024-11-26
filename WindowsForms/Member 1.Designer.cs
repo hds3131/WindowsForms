@@ -47,31 +47,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.dataGridView10 = new System.Windows.Forms.DataGridView();
             this.textBox23 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -293,212 +277,6 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Logout";
             // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.Salmon;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(187, 169);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 18);
-            this.textBox5.TabIndex = 20;
-            this.textBox5.Text = "1. Clay Club";
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.Salmon;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Location = new System.Drawing.Point(187, 199);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 15);
-            this.textBox6.TabIndex = 21;
-            this.textBox6.Text = "1st Nov";
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.Salmon;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Location = new System.Drawing.Point(187, 232);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 15);
-            this.textBox7.TabIndex = 22;
-            this.textBox7.Text = "5 -7 pm";
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.BackColor = System.Drawing.Color.Salmon;
-            this.linkLabel2.Location = new System.Drawing.Point(218, 257);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(69, 16);
-            this.linkLabel2.TabIndex = 23;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Book Now";
-            // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.Color.Salmon;
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Location = new System.Drawing.Point(323, 166);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(75, 15);
-            this.textBox8.TabIndex = 24;
-            this.textBox8.Text = "2. Tea Talk";
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.Color.Salmon;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Location = new System.Drawing.Point(323, 199);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(66, 15);
-            this.textBox9.TabIndex = 25;
-            this.textBox9.Text = "5th Nov";
-            // 
-            // textBox10
-            // 
-            this.textBox10.BackColor = System.Drawing.Color.Salmon;
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Location = new System.Drawing.Point(323, 229);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(52, 15);
-            this.textBox10.TabIndex = 26;
-            this.textBox10.Text = "12-2pm";
-            // 
-            // textBox11
-            // 
-            this.textBox11.BackColor = System.Drawing.Color.Salmon;
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(453, 169);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 18);
-            this.textBox11.TabIndex = 27;
-            this.textBox11.Text = "3. Culture";
-            // 
-            // textBox12
-            // 
-            this.textBox12.BackColor = System.Drawing.Color.Salmon;
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Location = new System.Drawing.Point(453, 199);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 15);
-            this.textBox12.TabIndex = 28;
-            this.textBox12.Text = "9th Nov";
-            // 
-            // textBox13
-            // 
-            this.textBox13.BackColor = System.Drawing.Color.Salmon;
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox13.Location = new System.Drawing.Point(453, 229);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(80, 15);
-            this.textBox13.TabIndex = 29;
-            this.textBox13.Text = "9 - 12pm";
-            // 
-            // linkLabel3
-            // 
-            this.linkLabel3.ActiveLinkColor = System.Drawing.Color.Salmon;
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.BackColor = System.Drawing.Color.Salmon;
-            this.linkLabel3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel3.Location = new System.Drawing.Point(337, 257);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(72, 17);
-            this.linkLabel3.TabIndex = 30;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "Book Now";
-            // 
-            // linkLabel4
-            // 
-            this.linkLabel4.ActiveLinkColor = System.Drawing.Color.Salmon;
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.BackColor = System.Drawing.Color.Salmon;
-            this.linkLabel4.Location = new System.Drawing.Point(465, 257);
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(66, 16);
-            this.linkLabel4.TabIndex = 31;
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "Book now";
-            // 
-            // textBox14
-            // 
-            this.textBox14.BackColor = System.Drawing.Color.Tomato;
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox14.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(177, 343);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 32;
-            this.textBox14.Text = "AI Event";
-            // 
-            // textBox15
-            // 
-            this.textBox15.BackColor = System.Drawing.Color.Tomato;
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox15.Location = new System.Drawing.Point(177, 369);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(142, 15);
-            this.textBox15.TabIndex = 33;
-            this.textBox15.Text = "7th oct               visited";
-            this.textBox15.TextChanged += new System.EventHandler(this.textBox15_TextChanged);
-            // 
-            // textBox16
-            // 
-            this.textBox16.BackColor = System.Drawing.Color.Tomato;
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox16.Location = new System.Drawing.Point(177, 390);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 15);
-            this.textBox16.TabIndex = 34;
-            this.textBox16.Text = "7 pound";
-            // 
-            // linkLabel5
-            // 
-            this.linkLabel5.AutoSize = true;
-            this.linkLabel5.BackColor = System.Drawing.Color.Tomato;
-            this.linkLabel5.Location = new System.Drawing.Point(181, 418);
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(47, 16);
-            this.linkLabel5.TabIndex = 35;
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "Delete";
-            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
-            // 
-            // textBox17
-            // 
-            this.textBox17.BackColor = System.Drawing.Color.Tomato;
-            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox17.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(177, 492);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(246, 21);
-            this.textBox17.TabIndex = 36;
-            this.textBox17.Text = "1.Hobbies - Singing, Travelling";
-            // 
-            // textBox18
-            // 
-            this.textBox18.BackColor = System.Drawing.Color.Tomato;
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox18.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(177, 520);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(261, 21);
-            this.textBox18.TabIndex = 37;
-            this.textBox18.Text = "2. Skills: Coding,networking";
-            // 
-            // textBox19
-            // 
-            this.textBox19.BackColor = System.Drawing.Color.Tomato;
-            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.Location = new System.Drawing.Point(177, 548);
-            this.textBox19.Multiline = true;
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(246, 22);
-            this.textBox19.TabIndex = 38;
-            this.textBox19.Text = "3. Comunity: Ai, Coding";
-            // 
             // textBox20
             // 
             this.textBox20.BackColor = System.Drawing.Color.DarkSalmon;
@@ -567,36 +345,47 @@
             this.textBox23.TabIndex = 44;
             this.textBox23.Text = "Togather Culture";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(193, 250);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 45;
+            this.button1.Text = "Book Now";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(321, 250);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 46;
+            this.button2.Text = "Book";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(451, 250);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 47;
+            this.button3.Text = "Book";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(643, 612);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox23);
             this.Controls.Add(this.dataGridView10);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox22);
             this.Controls.Add(this.textBox21);
             this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.linkLabel5);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.linkLabel4);
-            this.Controls.Add(this.linkLabel3);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -653,30 +442,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.LinkLabel linkLabel3;
-        private System.Windows.Forms.LinkLabel linkLabel4;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.LinkLabel linkLabel5;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.DataGridView dataGridView10;
         private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
