@@ -48,10 +48,8 @@
             this.dataGridView13 = new System.Windows.Forms.DataGridView();
             this.dataGridView14 = new System.Windows.Forms.DataGridView();
             this.dataGridView15 = new System.Windows.Forms.DataGridView();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
@@ -332,16 +330,6 @@
             this.dataGridView15.Size = new System.Drawing.Size(150, 150);
             this.dataGridView15.TabIndex = 26;
             // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.LightGray;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(318, 116);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 15);
-            this.textBox4.TabIndex = 27;
-            this.textBox4.Text = "Username: arc";
-            // 
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.LightGray;
@@ -361,17 +349,6 @@
             this.textBox6.Size = new System.Drawing.Size(100, 15);
             this.textBox6.TabIndex = 29;
             this.textBox6.Text = "Username: Par";
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.LightGray;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Location = new System.Drawing.Point(318, 137);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(129, 22);
-            this.textBox7.TabIndex = 30;
-            this.textBox7.Text = "Status: Non-member";
             // 
             // textBox8
             // 
@@ -821,10 +798,8 @@
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.dataGridView15);
             this.Controls.Add(this.dataGridView14);
             this.Controls.Add(this.dataGridView13);
@@ -890,10 +865,8 @@
         private System.Windows.Forms.DataGridView dataGridView13;
         private System.Windows.Forms.DataGridView dataGridView14;
         private System.Windows.Forms.DataGridView dataGridView15;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
