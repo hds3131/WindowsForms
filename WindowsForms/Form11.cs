@@ -26,5 +26,10 @@ namespace WindowsForms
         {
 
         }
+
+        private void textBox15_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
