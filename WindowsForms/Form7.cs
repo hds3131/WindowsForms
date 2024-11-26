@@ -10,24 +10,19 @@ using System.Windows.Forms;
 
 namespace WindowsForms
 {
-    public partial class Form10 : Form
+    public partial class Form7 : Form
     {
-        public Form10()
+        public Form7()
         {
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
         }
 
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
+        private void label14_Click(object sender, EventArgs e)
         {
 
         }
