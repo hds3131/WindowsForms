@@ -86,5 +86,15 @@ namespace WindowsForms
         {
 
         }
+
+        private void dataGridView12_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void linkLabel11_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
