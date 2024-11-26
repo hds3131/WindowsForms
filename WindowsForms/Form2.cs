@@ -113,7 +113,7 @@ namespace WindowsForms
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
-        {
+        {//dwd
 
         }
 
