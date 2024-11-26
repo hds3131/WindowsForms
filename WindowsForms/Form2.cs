@@ -51,7 +51,7 @@ namespace WindowsForms
             }
 
             // Connection string for your local database server name
-            string connectionString = @"Server=np:\\.\pipe\LOCALDB#5C7421CC\tsql\query;Database=mydb;Integrated Security=true;";
+            string connectionString = @"Server=np:\\.\pipe\LOCALDB#D105A1FD\tsql\query;Database=mydb;Integrated Security=true;";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
