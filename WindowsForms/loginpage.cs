@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -56,20 +57,51 @@ namespace WindowsForms
             string username = textBox3.Text;
             string password = textBox4.Text;
 
-            
-            if (username == "admin" && password == "password")
-            {
-                MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Invalid username or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
+                string connectionString = @"Server=np:\\.\pipe\LOCALDB#CE1246A4\tsql\query;Database=mydb;Integrated Security=true;";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    try
+                    {
+                        // Open the connection
+                        connection.Open();
+
+                        // Query to check if the username and password match any record in the Users table
+                        string query = "SELECT COUNT(1) FROM Users WHERE Username = @Username AND Password = @Password";
+                        using (SqlCommand command = new SqlCommand(query, connection))
+                        {
+                            // Use parameters to avoid SQL injection
+                            command.Parameters.AddWithValue("@Username", username);
+                            command.Parameters.AddWithValue("@Password", password);
+
+                            int count = Convert.ToInt32(command.ExecuteScalar());
+
+                            if (count == 1)
+                            {
+                                MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Invalid username or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        // Handle any errors that may occur during connection or query execution
+                        MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+
+            // Rest of your code remains unchanged...
         }
     }
-    }
+
+}
+    
+    
 
     
 

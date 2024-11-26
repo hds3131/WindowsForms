@@ -51,7 +51,7 @@ namespace WindowsForms
             }
 
             // Connection string for your local database server name
-            string connectionString = @"Server=np:\\.\pipe\LOCALDB#D105A1FD\tsql\query;Database=mydb;Integrated Security=true;";
+            string connectionString = @"Server=np:\\.\pipe\LOCALDB#CE1246A4\tsql\query;Database=mydb;Integrated Security=true;";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -110,6 +110,17 @@ namespace WindowsForms
         private void textBox3_TextChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form1 signUpForm = new Form1();
+            signUpForm.Show();
         }
     }
 }
