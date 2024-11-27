@@ -64,14 +64,12 @@ namespace WindowsForms
                 {
                     try
                     {
-                        // Open the connection
                         connection.Open();
 
-                        // Query to check if the username and password match any record in the Users table
+                        // Query to check if the user credentials match
                         string query = "SELECT COUNT(1) FROM Users WHERE Username = @Username AND Password = @Password";
                         using (SqlCommand command = new SqlCommand(query, connection))
                         {
-                            // Use parameters to avoid SQL injection
                             command.Parameters.AddWithValue("@Username", username);
                             command.Parameters.AddWithValue("@Password", password);
 
@@ -80,6 +78,20 @@ namespace WindowsForms
                             if (count == 1)
                             {
                                 MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                // Record member login in VisitorTracking table
+                                string insertVisitorQuery = "INSERT INTO VisitorTracking (VisitDate, PageVisited, VisitCount, IsMember) VALUES (@VisitDate, @PageVisited, @VisitCount, @IsMember)";
+                                using (SqlCommand visitorCommand = new SqlCommand(insertVisitorQuery, connection))
+                                {
+                                    visitorCommand.Parameters.AddWithValue("@VisitDate", DateTime.Now);
+                                    visitorCommand.Parameters.AddWithValue("@PageVisited", "LoginPage");
+                                    visitorCommand.Parameters.AddWithValue("@VisitCount", 1);
+                                    visitorCommand.Parameters.AddWithValue("@IsMember", 1); // Mark this as a member visit
+
+                                    visitorCommand.ExecuteNonQuery();
+                                }
+
+                                // Proceed to the member area or dashboard as needed
                             }
                             else
                             {
@@ -89,12 +101,10 @@ namespace WindowsForms
                     }
                     catch (Exception ex)
                     {
-                        // Handle any errors that may occur during connection or query execution
                         MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
-
             // Rest of your code remains unchanged...
         }
     }

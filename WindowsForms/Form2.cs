@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace WindowsForms
 {
@@ -30,12 +30,12 @@ namespace WindowsForms
         }
 
         private void button1_Click(object sender, EventArgs e)
+        
         {
             string username = textBox4.Text;
             string password = textBox5.Text;
             string confirmPassword = textBox6.Text;
             string email = textBox3.Text;
-
 
             // Basic validation
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(email))
@@ -86,6 +86,18 @@ namespace WindowsForms
 
                         if (result > 0)
                         {
+                            // Insert visitor data into the visitor tracking table
+                            string insertVisitorQuery = "INSERT INTO VisitorTracking (VisitDate, PageVisited, VisitCount, IsMember) VALUES (@VisitDate, @PageVisited, @VisitCount, @IsMember)";
+                            using (SqlCommand visitorCommand = new SqlCommand(insertVisitorQuery, connection))
+                            {
+                                visitorCommand.Parameters.AddWithValue("@VisitDate", DateTime.Now);
+                                visitorCommand.Parameters.AddWithValue("@PageVisited", "SignUpPage");
+                                visitorCommand.Parameters.AddWithValue("@VisitCount", 1);
+                                visitorCommand.Parameters.AddWithValue("@IsMember", 1); // Mark this entry as a member
+
+                                visitorCommand.ExecuteNonQuery();
+                            }
+
                             MessageBox.Show("Registration successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             this.Close(); // Close the sign-up form after successful registration
                         }
@@ -93,18 +105,6 @@ namespace WindowsForms
                         {
                             MessageBox.Show("Registration failed.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
-                        // Insert visitor data into the visitor tracking table
-                        string insertVisitorQuery = "INSERT INTO VisitorTracking (VisitDate, PageVisited, VisitCount, IsMember) VALUES (@VisitDate, @PageVisited, @VisitCount, @IsMember)";
-                        using (SqlCommand visitorCommand = new SqlCommand(insertVisitorQuery, connection))
-                        {
-                            visitorCommand.Parameters.AddWithValue("@VisitDate", DateTime.Now);
-                            visitorCommand.Parameters.AddWithValue("@PageVisited", "SignUpPage"); // or any appropriate value
-                            visitorCommand.Parameters.AddWithValue("@VisitCount", 1);
-                            visitorCommand.Parameters.AddWithValue("@IsMember", 1); // Since it's a member registration
-
-                            visitorCommand.ExecuteNonQuery();
-                        }
-
                     }
                 }
                 catch (Exception ex)
@@ -113,6 +113,7 @@ namespace WindowsForms
                 }
             }
         }
+    
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
