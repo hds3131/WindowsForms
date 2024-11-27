@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace WindowsForms
 {
@@ -15,16 +17,50 @@ namespace WindowsForms
         public Form7()
         {
             InitializeComponent();
+            LoadVisitorChart();
         }
 
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LoadVisitorChart()
         {
+            string connectionString = @"Server=np:\\.\pipe\LOCALDB#154346C2\tsql\query;Database=mydb;Integrated Security=true;";
+            string query = "SELECT IsMember, COUNT(*) AS Count FROM VisitorTracking GROUP BY IsMember";
 
-        }
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        SqlDataReader reader = command.ExecuteReader();
+                        chartVisitorTracking.Series.Clear();
 
-        private void label14_Click(object sender, EventArgs e)
-        {
+                        Series series = new Series
+                        {
+                            Name = "Visitors",
+                            ChartType = SeriesChartType.Pie, // You can use Pie, Bar, or Column
+                            IsValueShownAsLabel = true
+                        };
 
+                        while (reader.Read())
+                        {
+                            bool isMember = reader.GetBoolean(0);
+                            int count = reader.GetInt32(1);
+                            string label = isMember ? "Members" : "Non-Members";
+                            series.Points.AddXY(label, count);
+                        }
+
+                        chartVisitorTracking.Series.Add(series);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred while loading the chart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }
+
+
+       

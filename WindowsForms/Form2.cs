@@ -51,7 +51,7 @@ namespace WindowsForms
             }
 
             // Connection string for your local database server name
-            string connectionString = @"Server=np:\\.\pipe\LOCALDB#CE1246A4\tsql\query;Database=mydb;Integrated Security=true;";
+            string connectionString = @"Server=np:\\.\pipe\LOCALDB#154346C2\tsql\query;Database=mydb;Integrated Security=true;";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -93,6 +93,18 @@ namespace WindowsForms
                         {
                             MessageBox.Show("Registration failed.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
+                        // Insert visitor data into the visitor tracking table
+                        string insertVisitorQuery = "INSERT INTO VisitorTracking (VisitDate, PageVisited, VisitCount, IsMember) VALUES (@VisitDate, @PageVisited, @VisitCount, @IsMember)";
+                        using (SqlCommand visitorCommand = new SqlCommand(insertVisitorQuery, connection))
+                        {
+                            visitorCommand.Parameters.AddWithValue("@VisitDate", DateTime.Now);
+                            visitorCommand.Parameters.AddWithValue("@PageVisited", "SignUpPage"); // or any appropriate value
+                            visitorCommand.Parameters.AddWithValue("@VisitCount", 1);
+                            visitorCommand.Parameters.AddWithValue("@IsMember", 1); // Since it's a member registration
+
+                            visitorCommand.ExecuteNonQuery();
+                        }
+
                     }
                 }
                 catch (Exception ex)
