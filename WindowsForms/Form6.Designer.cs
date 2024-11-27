@@ -51,10 +51,10 @@
             this.button3 = new System.Windows.Forms.Button();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -317,50 +317,49 @@
             this.textBox21.TabIndex = 42;
             this.textBox21.Text = "ADD";
             // 
-            // label1
+            // button4
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.IndianRed;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(227, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 19);
-            this.label1.TabIndex = 43;
-            this.label1.Text = "Members Managment";
+            this.button4.BackColor = System.Drawing.Color.IndianRed;
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(207, 33);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(137, 23);
+            this.button4.TabIndex = 43;
+            this.button4.Text = "Members Managment";
+            this.button4.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // button5
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.IndianRed;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(640, 37);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 19);
-            this.label2.TabIndex = 44;
-            this.label2.Text = "More";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.button5.BackColor = System.Drawing.Color.IndianRed;
+            this.button5.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(361, 32);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 44;
+            this.button5.Text = "Events";
+            this.button5.UseVisualStyleBackColor = false;
             // 
-            // label3
+            // button6
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.IndianRed;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(417, 37);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 19);
-            this.label3.TabIndex = 45;
-            this.label3.Text = "Events";
+            this.button6.BackColor = System.Drawing.Color.IndianRed;
+            this.button6.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(454, 32);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(119, 23);
+            this.button6.TabIndex = 45;
+            this.button6.Text = "Visitors Tracking";
+            this.button6.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // button7
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.IndianRed;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(488, 36);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 19);
-            this.label4.TabIndex = 46;
-            this.label4.Text = "Visitor Tracking";
+            this.button7.BackColor = System.Drawing.Color.IndianRed;
+            this.button7.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(607, 32);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 46;
+            this.button7.Text = "More";
+            this.button7.UseVisualStyleBackColor = false;
             // 
             // Form6
             // 
@@ -368,10 +367,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(717, 654);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.textBox21);
             this.Controls.Add(this.textBox20);
             this.Controls.Add(this.button3);
@@ -442,9 +441,9 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }
