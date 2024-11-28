@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
@@ -189,16 +189,16 @@
             // 
             // chartVisitorTracking
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartVisitorTracking.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartVisitorTracking.Legends.Add(legend5);
+            chartArea6.Name = "ChartArea1";
+            this.chartVisitorTracking.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chartVisitorTracking.Legends.Add(legend6);
             this.chartVisitorTracking.Location = new System.Drawing.Point(353, 149);
             this.chartVisitorTracking.Name = "chartVisitorTracking";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chartVisitorTracking.Series.Add(series5);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chartVisitorTracking.Series.Add(series6);
             this.chartVisitorTracking.Size = new System.Drawing.Size(1071, 802);
             this.chartVisitorTracking.TabIndex = 66;
             this.chartVisitorTracking.Text = "chartVisitorTracking";
@@ -220,9 +220,9 @@
             // 
             this.button1.Location = new System.Drawing.Point(406, 67);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 43);
+            this.button1.Size = new System.Drawing.Size(128, 43);
             this.button1.TabIndex = 68;
-            this.button1.Text = "Home";
+            this.button1.Text = "Dashboard";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
