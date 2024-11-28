@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static WindowsForms.Form2;
+using BCrypt.Net;
 
 namespace WindowsForms
 {
@@ -17,13 +18,8 @@ namespace WindowsForms
         public Form1()
         {
             InitializeComponent();
-            //hi amy
+            textBox4.PasswordChar = '•';
         }
-
-
-        
-        
-
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
@@ -34,7 +30,6 @@ namespace WindowsForms
         {
 
         }
-
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -54,29 +49,29 @@ namespace WindowsForms
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            {
             string username = textBox3.Text;
             string password = textBox4.Text;
 
+            string connectionString = @"Server=np:\\.\pipe\LOCALDB#154346C2\tsql\query;Database=mydb;Integrated Security=true;";
 
-                string connectionString = @"Server=np:\\.\pipe\LOCALDB#154346C2\tsql\query;Database=mydb;Integrated Security=true;";
-
-                using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
                 {
-                    try
+                    connection.Open();
+
+                    // Query to get the hashed password from the database
+                    string query = "SELECT Password FROM Users WHERE Username = @Username";
+                    using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        connection.Open();
+                        command.Parameters.AddWithValue("@Username", username);
 
-                        // Query to check if the user credentials match
-                        string query = "SELECT COUNT(1) FROM Users WHERE Username = @Username AND Password = @Password";
-                        using (SqlCommand command = new SqlCommand(query, connection))
+                        var dbPassword = command.ExecuteScalar() as string;
+
+                        if (dbPassword != null && BCrypt.Net.BCrypt.Verify(password, dbPassword))
                         {
-                            command.Parameters.AddWithValue("@Username", username);
-                            command.Parameters.AddWithValue("@Password", password);
-
-                            int count = Convert.ToInt32(command.ExecuteScalar());
-
-                            if (count == 1)
+                            bool isValidPassword = BCrypt.Net.BCrypt.Verify(password, dbPassword);
+                            if (isValidPassword)
                             {
                                 MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -93,40 +88,33 @@ namespace WindowsForms
                                 }
 
                                 // Proceed to the member area or dashboard as needed
+                                Form6 form6 = new Form6();
+                                form6.Show();
+                                this.Hide();
                             }
                             else
                             {
                                 MessageBox.Show("Invalid username or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        else
+                        {
+                            MessageBox.Show("Invalid username or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            // Rest of your code remains unchanged...
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form3 form3 = new Form3();
-
-
             form3.Show();
-
-
             this.Hide();
         }
     }
-
 }
-    
-    
-
-    
-
-
-    
-

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using BCrypt.Net;
 
 namespace WindowsForms
 {
@@ -72,13 +73,15 @@ namespace WindowsForms
                             return;
                         }
                     }
+                   
 
                     // Insert query to add a new user with the email field
                     string insertQuery = "INSERT INTO Users (Username, Password, Email, CreatedAt) VALUES (@Username, @Password, @Email, @CreatedAt)";
                     using (SqlCommand command = new SqlCommand(insertQuery, connection))
                     {
+                        string hashedPwd = BCrypt.Net.BCrypt.HashPassword(password);
                         command.Parameters.AddWithValue("@Username", username);
-                        command.Parameters.AddWithValue("@Password", password); // Ideally, password should be hashed
+                        command.Parameters.AddWithValue("@Password", hashedPwd); // Ideally, password should be hashed
                         command.Parameters.AddWithValue("@Email", email);
                         command.Parameters.AddWithValue("@CreatedAt", DateTime.Now);
 
