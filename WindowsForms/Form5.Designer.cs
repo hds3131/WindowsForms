@@ -42,14 +42,10 @@
             this.dataGridView10 = new System.Windows.Forms.DataGridView();
             this.dataGridView11 = new System.Windows.Forms.DataGridView();
             this.dataGridView12 = new System.Windows.Forms.DataGridView();
-            this.dataGridView13 = new System.Windows.Forms.DataGridView();
-            this.dataGridView14 = new System.Windows.Forms.DataGridView();
-            this.dataGridView15 = new System.Windows.Forms.DataGridView();
             this.linkLabel17 = new System.Windows.Forms.LinkLabel();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -74,9 +70,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView15)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -249,45 +242,6 @@
             this.dataGridView12.Size = new System.Drawing.Size(225, 225);
             this.dataGridView12.TabIndex = 23;
             // 
-            // dataGridView13
-            // 
-            this.dataGridView13.BackgroundColor = System.Drawing.Color.LightGray;
-            this.dataGridView13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView13.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView13.Location = new System.Drawing.Point(466, 791);
-            this.dataGridView13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridView13.Name = "dataGridView13";
-            this.dataGridView13.RowHeadersWidth = 51;
-            this.dataGridView13.RowTemplate.Height = 24;
-            this.dataGridView13.Size = new System.Drawing.Size(225, 234);
-            this.dataGridView13.TabIndex = 24;
-            // 
-            // dataGridView14
-            // 
-            this.dataGridView14.BackgroundColor = System.Drawing.Color.LightGray;
-            this.dataGridView14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView14.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView14.Location = new System.Drawing.Point(712, 791);
-            this.dataGridView14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridView14.Name = "dataGridView14";
-            this.dataGridView14.RowHeadersWidth = 51;
-            this.dataGridView14.RowTemplate.Height = 24;
-            this.dataGridView14.Size = new System.Drawing.Size(232, 234);
-            this.dataGridView14.TabIndex = 25;
-            // 
-            // dataGridView15
-            // 
-            this.dataGridView15.BackgroundColor = System.Drawing.Color.LightGray;
-            this.dataGridView15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView15.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView15.Location = new System.Drawing.Point(963, 791);
-            this.dataGridView15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridView15.Name = "dataGridView15";
-            this.dataGridView15.RowHeadersWidth = 51;
-            this.dataGridView15.RowTemplate.Height = 24;
-            this.dataGridView15.Size = new System.Drawing.Size(225, 234);
-            this.dataGridView15.TabIndex = 26;
-            // 
             // linkLabel17
             // 
             this.linkLabel17.AutoSize = true;
@@ -338,18 +292,6 @@
             this.label2.Size = new System.Drawing.Size(160, 26);
             this.label2.TabIndex = 65;
             this.label2.Text = "New Members";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.IndianRed;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(304, 791);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(154, 26);
-            this.label3.TabIndex = 66;
-            this.label3.Text = "Old Members";
             // 
             // label4
             // 
@@ -485,14 +427,10 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox24);
             this.Controls.Add(this.linkLabel17);
-            this.Controls.Add(this.dataGridView15);
-            this.Controls.Add(this.dataGridView14);
-            this.Controls.Add(this.dataGridView13);
             this.Controls.Add(this.dataGridView12);
             this.Controls.Add(this.dataGridView11);
             this.Controls.Add(this.dataGridView10);
@@ -522,9 +460,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView15)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -547,14 +482,10 @@
         private System.Windows.Forms.DataGridView dataGridView10;
         private System.Windows.Forms.DataGridView dataGridView11;
         private System.Windows.Forms.DataGridView dataGridView12;
-        private System.Windows.Forms.DataGridView dataGridView13;
-        private System.Windows.Forms.DataGridView dataGridView14;
-        private System.Windows.Forms.DataGridView dataGridView15;
         private System.Windows.Forms.LinkLabel linkLabel17;
         private System.Windows.Forms.TextBox textBox24;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
