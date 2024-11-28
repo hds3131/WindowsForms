@@ -67,22 +67,24 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Tomato;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(195, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(292, 19);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(476, 60);
+            this.dataGridView1.Size = new System.Drawing.Size(714, 94);
             this.dataGridView1.TabIndex = 0;
             // 
             // dataGridView2
             // 
             this.dataGridView2.BackgroundColor = System.Drawing.Color.Tomato;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView2.Location = new System.Drawing.Point(18, 19);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(177, 60);
+            this.dataGridView2.Size = new System.Drawing.Size(266, 94);
             this.dataGridView2.TabIndex = 1;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
@@ -90,63 +92,69 @@
             // 
             this.dataGridView3.BackgroundColor = System.Drawing.Color.Tomato;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(12, 78);
+            this.dataGridView3.Location = new System.Drawing.Point(18, 122);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(145, 568);
+            this.dataGridView3.Size = new System.Drawing.Size(218, 888);
             this.dataGridView3.TabIndex = 2;
             // 
             // dataGridView4
             // 
             this.dataGridView4.BackgroundColor = System.Drawing.Color.Tomato;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(163, 107);
+            this.dataGridView4.Location = new System.Drawing.Point(244, 167);
+            this.dataGridView4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.RowHeadersWidth = 51;
             this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.Size = new System.Drawing.Size(209, 102);
+            this.dataGridView4.Size = new System.Drawing.Size(314, 159);
             this.dataGridView4.TabIndex = 3;
             // 
             // dataGridView5
             // 
             this.dataGridView5.BackgroundColor = System.Drawing.Color.Tomato;
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(163, 215);
+            this.dataGridView5.Location = new System.Drawing.Point(244, 336);
+            this.dataGridView5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.RowHeadersWidth = 51;
             this.dataGridView5.RowTemplate.Height = 24;
-            this.dataGridView5.Size = new System.Drawing.Size(209, 93);
+            this.dataGridView5.Size = new System.Drawing.Size(314, 145);
             this.dataGridView5.TabIndex = 4;
             // 
             // dataGridView6
             // 
             this.dataGridView6.BackgroundColor = System.Drawing.Color.Tomato;
             this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(163, 314);
+            this.dataGridView6.Location = new System.Drawing.Point(244, 491);
+            this.dataGridView6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView6.Name = "dataGridView6";
             this.dataGridView6.RowHeadersWidth = 51;
             this.dataGridView6.RowTemplate.Height = 24;
-            this.dataGridView6.Size = new System.Drawing.Size(209, 100);
+            this.dataGridView6.Size = new System.Drawing.Size(314, 156);
             this.dataGridView6.TabIndex = 5;
             // 
             // dataGridView7
             // 
             this.dataGridView7.BackgroundColor = System.Drawing.Color.Tomato;
             this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Location = new System.Drawing.Point(163, 421);
+            this.dataGridView7.Location = new System.Drawing.Point(244, 658);
+            this.dataGridView7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView7.Name = "dataGridView7";
             this.dataGridView7.RowHeadersWidth = 51;
             this.dataGridView7.RowTemplate.Height = 24;
-            this.dataGridView7.Size = new System.Drawing.Size(388, 218);
+            this.dataGridView7.Size = new System.Drawing.Size(582, 341);
             this.dataGridView7.TabIndex = 6;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(33, 107);
+            this.pictureBox1.Location = new System.Drawing.Point(50, 167);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 109);
+            this.pictureBox1.Size = new System.Drawing.Size(150, 170);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -156,9 +164,10 @@
             this.textBox1.BackColor = System.Drawing.Color.Tomato;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(15, 31);
+            this.textBox1.Location = new System.Drawing.Point(22, 48);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 27);
+            this.textBox1.Size = new System.Drawing.Size(249, 43);
             this.textBox1.TabIndex = 8;
             this.textBox1.Text = "Togather Culture";
             // 
@@ -169,9 +178,10 @@
             this.linkLabel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.linkLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(42, 421);
+            this.linkLabel1.Location = new System.Drawing.Point(63, 658);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(80, 28);
+            this.linkLabel1.Size = new System.Drawing.Size(125, 44);
             this.linkLabel1.TabIndex = 13;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Logout";
@@ -181,9 +191,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Tomato;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(203, 39);
+            this.label1.Location = new System.Drawing.Point(304, 61);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 19);
+            this.label1.Size = new System.Drawing.Size(147, 32);
             this.label1.TabIndex = 14;
             this.label1.Text = "Dashboard";
             // 
@@ -192,9 +203,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Tomato;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(314, 39);
+            this.label2.Location = new System.Drawing.Point(471, 61);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 19);
+            this.label2.Size = new System.Drawing.Size(95, 32);
             this.label2.TabIndex = 15;
             this.label2.Text = "Events";
             // 
@@ -203,9 +215,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Tomato;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(391, 39);
+            this.label3.Location = new System.Drawing.Point(586, 61);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(172, 19);
+            this.label3.Size = new System.Drawing.Size(285, 32);
             this.label3.TabIndex = 16;
             this.label3.Text = "Community and Chats";
             // 
@@ -214,29 +227,32 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Tomato;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(597, 39);
+            this.label4.Location = new System.Drawing.Point(896, 61);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 19);
+            this.label4.Size = new System.Drawing.Size(77, 32);
             this.label4.TabIndex = 17;
             this.label4.Text = "More";
             // 
             // dataGridView8
             // 
             this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView8.Location = new System.Drawing.Point(190, 442);
+            this.dataGridView8.Location = new System.Drawing.Point(285, 691);
+            this.dataGridView8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView8.Name = "dataGridView8";
             this.dataGridView8.RowHeadersWidth = 51;
             this.dataGridView8.RowTemplate.Height = 24;
-            this.dataGridView8.Size = new System.Drawing.Size(310, 41);
+            this.dataGridView8.Size = new System.Drawing.Size(465, 64);
             this.dataGridView8.TabIndex = 27;
             // 
             // textBox12
             // 
             this.textBox12.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Location = new System.Drawing.Point(207, 454);
+            this.textBox12.Location = new System.Drawing.Point(310, 709);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(281, 15);
+            this.textBox12.Size = new System.Drawing.Size(422, 24);
             this.textBox12.TabIndex = 28;
             this.textBox12.Text = "                                    Search";
             // 
@@ -244,9 +260,10 @@
             // 
             this.textBox13.BackColor = System.Drawing.Color.Red;
             this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox13.Location = new System.Drawing.Point(173, 489);
+            this.textBox13.Location = new System.Drawing.Point(260, 764);
+            this.textBox13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 22);
+            this.textBox13.Size = new System.Drawing.Size(149, 31);
             this.textBox13.TabIndex = 29;
             this.textBox13.Text = "AI group";
             // 
@@ -254,9 +271,10 @@
             // 
             this.textBox14.BackColor = System.Drawing.Color.Red;
             this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox14.Location = new System.Drawing.Point(173, 543);
+            this.textBox14.Location = new System.Drawing.Point(260, 848);
+            this.textBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 22);
+            this.textBox14.Size = new System.Drawing.Size(149, 31);
             this.textBox14.TabIndex = 30;
             this.textBox14.Text = "Tea Talk";
             // 
@@ -264,18 +282,20 @@
             // 
             this.textBox15.BackColor = System.Drawing.Color.Red;
             this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox15.Location = new System.Drawing.Point(173, 599);
+            this.textBox15.Location = new System.Drawing.Point(260, 936);
+            this.textBox15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 22);
+            this.textBox15.Size = new System.Drawing.Size(149, 31);
             this.textBox15.TabIndex = 31;
             this.textBox15.Text = "ARU";
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.IndianRed;
-            this.button3.Location = new System.Drawing.Point(413, 489);
+            this.button3.Location = new System.Drawing.Point(620, 764);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(87, 32);
+            this.button3.Size = new System.Drawing.Size(130, 50);
             this.button3.TabIndex = 34;
             this.button3.Text = "Notification";
             this.button3.UseVisualStyleBackColor = false;
@@ -283,9 +303,10 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.IndianRed;
-            this.button6.Location = new System.Drawing.Point(413, 542);
+            this.button6.Location = new System.Drawing.Point(620, 847);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(87, 35);
+            this.button6.Size = new System.Drawing.Size(130, 55);
             this.button6.TabIndex = 37;
             this.button6.Text = "Notification";
             this.button6.UseVisualStyleBackColor = false;
@@ -293,9 +314,10 @@
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.IndianRed;
-            this.button9.Location = new System.Drawing.Point(413, 593);
+            this.button9.Location = new System.Drawing.Point(620, 927);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(87, 34);
+            this.button9.Size = new System.Drawing.Size(130, 53);
             this.button9.TabIndex = 40;
             this.button9.Text = "Notification";
             this.button9.UseVisualStyleBackColor = false;
@@ -306,18 +328,19 @@
             this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox16.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox16.ForeColor = System.Drawing.Color.White;
-            this.textBox16.Location = new System.Drawing.Point(173, 79);
+            this.textBox16.Location = new System.Drawing.Point(260, 123);
+            this.textBox16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 20);
+            this.textBox16.Size = new System.Drawing.Size(150, 32);
             this.textBox16.TabIndex = 41;
             this.textBox16.Text = "Community";
             // 
             // Form9
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
-            this.ClientSize = new System.Drawing.Size(683, 660);
+            this.ClientSize = new System.Drawing.Size(1199, 1031);
             this.Controls.Add(this.textBox16);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button6);
@@ -341,6 +364,7 @@
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form9";
             this.Text = "Form9";
             this.Load += new System.EventHandler(this.Form9_Load);

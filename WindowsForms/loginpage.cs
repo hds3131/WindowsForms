@@ -16,7 +16,8 @@ namespace WindowsForms
     {
         public Form1()
         {
-            InitializeComponent();//hi amy
+            InitializeComponent();
+            //hi amy
         }
 
 
@@ -106,6 +107,17 @@ namespace WindowsForms
                 }
             }
             // Rest of your code remains unchanged...
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form3 form3 = new Form3();
+
+
+            form3.Show();
+
+
+            this.Hide();
         }
     }
 
