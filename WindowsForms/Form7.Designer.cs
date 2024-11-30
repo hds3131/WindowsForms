@@ -331,6 +331,7 @@
             this.chartVisitorTracking.Size = new System.Drawing.Size(943, 803);
             this.chartVisitorTracking.TabIndex = 70;
             this.chartVisitorTracking.Text = "chartVisitorTracking";
+            this.chartVisitorTracking.Click += new System.EventHandler(this.chartVisitorTracking_Click);
             // 
             // Form7
             // 

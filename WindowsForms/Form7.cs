@@ -22,7 +22,7 @@ namespace WindowsForms
 
         private void LoadVisitorTrackingData()
         {
-            string connectionString = @"Server=np:\\.\pipe\LOCALDB#154346C2\tsql\query;Database=mydb;Integrated Security=true;";
+            string connectionString = @"Server=np:\\.\pipe\LOCALDB##653b9183\tsql\query;Database=mydbs;Integrated Security=true;";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -79,6 +79,11 @@ namespace WindowsForms
                     MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void chartVisitorTracking_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

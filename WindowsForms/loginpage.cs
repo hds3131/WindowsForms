@@ -51,7 +51,7 @@ namespace WindowsForms
             string username = textBox3.Text;
             string password = textBox4.Text;
 
-            string connectionString = @"Server=np:\\.\pipe\LOCALDB#154346C2\tsql\query;Database=mydb;Integrated Security=true;";
+            string connectionString = @"Server=np:\\.\pipe\LOCALDB#653b9183\tsql\query;Database=mydbs;Integrated Security=true;";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
