@@ -30,11 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
 >>>>>>> parent of 9277bb5 (form 7 almost completed)
+=======
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+>>>>>>> parent of ac4dc05 (form connection)
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
@@ -464,6 +470,7 @@
             // 
             // chartVisitorTracking
             // 
+<<<<<<< HEAD
             chartArea1.Name = "ChartArea1";
             this.chartVisitorTracking.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
@@ -478,6 +485,72 @@
             this.chartVisitorTracking.TabIndex = 66;
             this.chartVisitorTracking.Text = "chartVisitorTracking";
 >>>>>>> parent of 9277bb5 (form 7 almost completed)
+=======
+            chartArea5.Name = "ChartArea1";
+            this.chartVisitorTracking.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chartVisitorTracking.Legends.Add(legend5);
+            this.chartVisitorTracking.Location = new System.Drawing.Point(353, 149);
+            this.chartVisitorTracking.Name = "chartVisitorTracking";
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            this.chartVisitorTracking.Series.Add(series5);
+            this.chartVisitorTracking.Size = new System.Drawing.Size(1071, 802);
+            this.chartVisitorTracking.TabIndex = 66;
+            this.chartVisitorTracking.Text = "chartVisitorTracking";
+            this.chartVisitorTracking.Click += new System.EventHandler(this.chartVisitorTracking_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Red;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(45, 397);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(282, 42);
+            this.label5.TabIndex = 67;
+            this.label5.Text = "Vistor Tracking";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(406, 67);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 43);
+            this.button1.TabIndex = 68;
+            this.button1.Text = "Home";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(579, 67);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(114, 43);
+            this.button2.TabIndex = 69;
+            this.button2.Text = "Events";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(746, 67);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(171, 44);
+            this.button3.TabIndex = 70;
+            this.button3.Text = "VisItor tracking";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(986, 67);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(134, 41);
+            this.button4.TabIndex = 71;
+            this.button4.Text = "Feedback";
+            this.button4.UseVisualStyleBackColor = true;
+>>>>>>> parent of ac4dc05 (form connection)
             // 
             // Form7
             // 

@@ -17,10 +17,15 @@ namespace WindowsForms
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 <<<<<<< HEAD
+<<<<<<< HEAD
             Application.Run(new Form3());
 =======
             Application.Run(new Form7());
 >>>>>>> parent of 9277bb5 (form 7 almost completed)
+=======
+            Application.Run(new Form7());
+            
+>>>>>>> parent of ac4dc05 (form connection)
         }
         
 
