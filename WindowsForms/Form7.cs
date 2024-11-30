@@ -24,11 +24,7 @@ namespace WindowsForms
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 <<<<<<< HEAD
-<<<<<<< HEAD
             //yuhkj
-=======
-
->>>>>>> parent of 6858f23 (Merge branch 'master' of https://github.com/hds3131/WindowsForms)
         }
 
         private void label14_Click(object sender, EventArgs e)
