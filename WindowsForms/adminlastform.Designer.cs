@@ -225,7 +225,7 @@
             // 
             this.textBox9.BackColor = System.Drawing.Color.Silver;
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Location = new System.Drawing.Point(484, 135);
+            this.textBox9.Location = new System.Drawing.Point(484, 140);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(100, 15);
             this.textBox9.TabIndex = 35;
