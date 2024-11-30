@@ -147,6 +147,7 @@
             // button2
             // 
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Location = new System.Drawing.Point(18, 497);
             this.linkLabel1.Name = "linkLabel1";
@@ -156,6 +157,8 @@
             this.linkLabel1.Text = "Admin login";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
 =======
+=======
+>>>>>>> parent of 6858f23 (Merge branch 'master' of https://github.com/hds3131/WindowsForms)
             this.button2.Location = new System.Drawing.Point(334, 10);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(97, 46);
@@ -163,7 +166,10 @@
             this.button2.Text = "sign up";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+<<<<<<< HEAD
 >>>>>>> parent of ac4dc05 (form connection)
+=======
+>>>>>>> parent of 6858f23 (Merge branch 'master' of https://github.com/hds3131/WindowsForms)
             // 
             // Form1
             // 
