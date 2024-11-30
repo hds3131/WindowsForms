@@ -17,7 +17,6 @@ namespace WindowsForms
         public Form3()
         {
             InitializeComponent();
-            textBox6.PasswordChar = '•';
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -57,9 +56,6 @@ namespace WindowsForms
                             {
                                 MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 // Navigate to the admin dashboard or perform other actions as needed
-                                Form5 form5 = new Form5();
-                                form5.Show();
-                                this.Hide();
                             }
                             else
                             {
@@ -75,18 +71,7 @@ namespace WindowsForms
                 }
             }
         }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Form1 form1 = new Form1();
-
-
-            form1.Show();
-
-
-            this.Hide();
-        }
-    }
+            }
 
         }
     

@@ -19,7 +19,7 @@ namespace WindowsForms
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //yuhkj
+
         }
 
         private void label14_Click(object sender, EventArgs e)
