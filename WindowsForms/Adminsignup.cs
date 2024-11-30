@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsForms
 {
-    public partial class Form7 : Form
+    public partial class Adminsignup : Form
     {
-        public Form7()
+        public Adminsignup()
         {
             InitializeComponent();
-        }
-
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            //yuhkj
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
