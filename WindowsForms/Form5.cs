@@ -91,5 +91,16 @@ namespace WindowsForms
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form7 form7 = new Form7();
+
+            
+            form7.Show();
+
+        
+            this.Hide();
+        }
     }
 }
