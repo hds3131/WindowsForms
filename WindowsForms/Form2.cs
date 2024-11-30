@@ -8,7 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
 
+=======
+using System.Windows.Forms.DataVisualization.Charting;
+>>>>>>> parent of a844f7b (completed till week)
 
 namespace WindowsForms
 {

@@ -17,7 +17,6 @@ namespace WindowsForms
         public Form3()
         {
             InitializeComponent();
-            textBox6.PasswordChar = '•';
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
