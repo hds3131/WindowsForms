@@ -101,7 +101,7 @@
             // 
             this.dataGridView4.BackgroundColor = System.Drawing.Color.Tomato;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(163, 107);
+            this.dataGridView4.Location = new System.Drawing.Point(163, 105);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.RowHeadersWidth = 51;
             this.dataGridView4.RowTemplate.Height = 24;
