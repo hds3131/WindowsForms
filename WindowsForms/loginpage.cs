@@ -33,8 +33,7 @@ namespace WindowsForms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form2 signUpForm = new Form2();
-            signUpForm.Show();
+            
         }
 
         private void textBox3_TextChanged_1(object sender, EventArgs e)
@@ -100,6 +99,12 @@ namespace WindowsForms
             Form3 form3 = new Form3();
             form3.Show();
             this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form2 signUpForm = new Form2();
+            signUpForm.Show();
         }
     }
 }

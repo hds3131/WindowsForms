@@ -8,11 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-<<<<<<< HEAD
-
-=======
-using System.Windows.Forms.DataVisualization.Charting;
->>>>>>> parent of a844f7b (completed till week)
+using BCrypt.Net;
 
 namespace WindowsForms
 {
@@ -21,11 +17,6 @@ namespace WindowsForms
         public Form2()
         {
             InitializeComponent();
-        }
-        public class SignUpForm : Form
-        {
-            
-            
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -40,7 +31,6 @@ namespace WindowsForms
             string confirmPassword = textBox6.Text;
             string email = textBox3.Text;
 
-
             // Basic validation
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(email))
             {
@@ -54,8 +44,11 @@ namespace WindowsForms
                 return;
             }
 
+            // Hash the password
+            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
+
             // Connection string for your local database server name
-            string connectionString = @"Server=np:\\.\pipe\LOCALDB#CE1246A4\tsql\query;Database=mydb;Integrated Security=true;";
+            string connectionString = @"Server=np:\\.\pipe\LOCALDB#154346C2\tsql\query;Database=mydb;Integrated Security=true;";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -82,7 +75,7 @@ namespace WindowsForms
                     using (SqlCommand command = new SqlCommand(insertQuery, connection))
                     {
                         command.Parameters.AddWithValue("@Username", username);
-                        command.Parameters.AddWithValue("@Password", password); // Ideally, password should be hashed
+                        command.Parameters.AddWithValue("@Password", hashedPassword); // Store hashed password
                         command.Parameters.AddWithValue("@Email", email);
                         command.Parameters.AddWithValue("@CreatedAt", DateTime.Now);
 
@@ -97,18 +90,6 @@ namespace WindowsForms
                         {
                             MessageBox.Show("Registration failed.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
-                        // Insert visitor data into the visitor tracking table
-                        string insertVisitorQuery = "INSERT INTO VisitorTracking (VisitDate, PageVisited, VisitCount, IsMember) VALUES (@VisitDate, @PageVisited, @VisitCount, @IsMember)";
-                        using (SqlCommand visitorCommand = new SqlCommand(insertVisitorQuery, connection))
-                        {
-                            visitorCommand.Parameters.AddWithValue("@VisitDate", DateTime.Now);
-                            visitorCommand.Parameters.AddWithValue("@PageVisited", "SignUpPage"); // or any appropriate value
-                            visitorCommand.Parameters.AddWithValue("@VisitCount", 1);
-                            visitorCommand.Parameters.AddWithValue("@IsMember", 1); // Since it's a member registration
-
-                            visitorCommand.ExecuteNonQuery();
-                        }
-
                     }
                 }
                 catch (Exception ex)
@@ -123,13 +104,8 @@ namespace WindowsForms
 
         }
 
-        private void textBox3_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
-        {//dwd
+        {
 
         }
 
@@ -140,5 +116,3 @@ namespace WindowsForms
         }
     }
 }
-    
-

@@ -400,9 +400,9 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartVisitorTracking;
-=======
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartVisitorTracking;
+
+        
 
     }
 }
-        }
+        

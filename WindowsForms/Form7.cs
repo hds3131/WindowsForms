@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace WindowsForms
 {
@@ -15,102 +17,68 @@ namespace WindowsForms
         public Form7()
         {
             InitializeComponent();
-<<<<<<< HEAD
-=======
-            LoadVisitorChart();
->>>>>>> parent of 9277bb5 (form 7 almost completed)
+            LoadVisitorTrackingData();
         }
 
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LoadVisitorTrackingData()
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            //yuhkj
-=======
-
->>>>>>> parent of 6858f23 (Merge branch 'master' of https://github.com/hds3131/WindowsForms)
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-    }
-}
-=======
             string connectionString = @"Server=np:\\.\pipe\LOCALDB#154346C2\tsql\query;Database=mydb;Integrated Security=true;";
-            string query = "SELECT IsMember, COUNT(*) AS Count FROM VisitorTracking GROUP BY IsMember";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
                 {
                     connection.Open();
+
+                    // Query to get the visitor tracking data
+                    string query = "SELECT VisitDate, IsMember, COUNT(*) AS VisitCount FROM VisitorTracking GROUP BY VisitDate, IsMember";
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        SqlDataReader reader = command.ExecuteReader();
+                        SqlDataAdapter adapter = new SqlDataAdapter(command);
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+
                         chartVisitorTracking.Series.Clear();
 
-                        Series series = new Series
-                        {
-                            Name = "Visitors",
-                            ChartType = SeriesChartType.Pie, // You can use Pie, Bar, or Column
-                            IsValueShownAsLabel = true
-                        };
+                        Series membersSeries = new Series("Members");
+                        membersSeries.ChartType = SeriesChartType.Line;
+                        membersSeries.BorderWidth = 2;
 
-                        while (reader.Read())
+                        Series nonMembersSeries = new Series("Non-Members");
+                        nonMembersSeries.ChartType = SeriesChartType.Line;
+                        nonMembersSeries.BorderWidth = 2;
+
+                        foreach (DataRow row in dataTable.Rows)
                         {
-                            bool isMember = reader.GetBoolean(0);
-                            int count = reader.GetInt32(1);
-                            string label = isMember ? "Members" : "Non-Members";
-                            series.Points.AddXY(label, count);
+                            DateTime visitDate = Convert.ToDateTime(row["VisitDate"]);
+                            bool isMember = Convert.ToBoolean(row["IsMember"]);
+                            int visitCount = Convert.ToInt32(row["VisitCount"]);
+
+                            if (isMember)
+                            {
+                                membersSeries.Points.AddXY(visitDate, visitCount);
+                            }
+                            else
+                            {
+                                nonMembersSeries.Points.AddXY(visitDate, visitCount);
+                            }
                         }
 
-                        chartVisitorTracking.Series.Add(series);
+                        chartVisitorTracking.Series.Add(membersSeries);
+                        chartVisitorTracking.Series.Add(nonMembersSeries);
+
+                        chartVisitorTracking.ChartAreas[0].AxisX.LabelStyle.Format = "dd-MM-yyyy";
+                        chartVisitorTracking.ChartAreas[0].AxisX.Interval = 1;
+                        chartVisitorTracking.ChartAreas[0].AxisX.IntervalType = DateTimeIntervalType.Days;
+                        chartVisitorTracking.ChartAreas[0].AxisX.Title = "Visit Date";
+                        chartVisitorTracking.ChartAreas[0].AxisY.Title = "Visit Count";
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"An error occurred while loading the chart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
-
-        private void chartVisitorTracking_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form5 homeForm = new Form5();
-            homeForm.Show();
-            // Close the current form
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-        }
-        private Form3 logoutForm = null;
-        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            if (logoutForm == null || logoutForm.IsDisposed)
-            {
-                logoutForm = new Form3();
-                logoutForm.Show();
-                this.Hide(); // Hide the current form to keep only the new form open
-
-                // When Form3 is closed, reset the reference to null
-                logoutForm.FormClosed += (s, args) => logoutForm = null;
-            }
-        }
+    }
+}
