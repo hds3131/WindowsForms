@@ -71,6 +71,43 @@ namespace WindowsForms
                 }
             }
         }
+<<<<<<< HEAD
+=======
+
+        private void chartVisitorTracking_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form5 homeForm = new Form5();
+            homeForm.Show();
+            // Close the current form
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+        }
+        private Form3 logoutForm = null;
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (logoutForm == null || logoutForm.IsDisposed)
+            {
+                logoutForm = new Form3();
+                logoutForm.Show();
+                this.Hide(); // Hide the current form to keep only the new form open
+
+                // When Form3 is closed, reset the reference to null
+                logoutForm.FormClosed += (s, args) => logoutForm = null;
+            }
+        }
+>>>>>>> parent of ecea089 (f7)
     }
 }
 
