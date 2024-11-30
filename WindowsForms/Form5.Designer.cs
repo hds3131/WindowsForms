@@ -50,7 +50,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 4444346 (Update Form5.Designer.cs)
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -251,11 +254,20 @@
             this.dataGridView13.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView13.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+<<<<<<< HEAD
             this.dataGridView13.Location = new System.Drawing.Point(311, 506);
             this.dataGridView13.Name = "dataGridView13";
             this.dataGridView13.RowHeadersWidth = 51;
             this.dataGridView13.RowTemplate.Height = 24;
             this.dataGridView13.Size = new System.Drawing.Size(150, 150);
+=======
+            this.dataGridView13.Location = new System.Drawing.Point(466, 791);
+            this.dataGridView13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView13.Name = "dataGridView13";
+            this.dataGridView13.RowHeadersWidth = 51;
+            this.dataGridView13.RowTemplate.Height = 24;
+            this.dataGridView13.Size = new System.Drawing.Size(225, 234);
+>>>>>>> parent of 4444346 (Update Form5.Designer.cs)
             this.dataGridView13.TabIndex = 24;
             // 
             // dataGridView14
@@ -263,11 +275,20 @@
             this.dataGridView14.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView14.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+<<<<<<< HEAD
             this.dataGridView14.Location = new System.Drawing.Point(475, 506);
             this.dataGridView14.Name = "dataGridView14";
             this.dataGridView14.RowHeadersWidth = 51;
             this.dataGridView14.RowTemplate.Height = 24;
             this.dataGridView14.Size = new System.Drawing.Size(155, 150);
+=======
+            this.dataGridView14.Location = new System.Drawing.Point(712, 791);
+            this.dataGridView14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView14.Name = "dataGridView14";
+            this.dataGridView14.RowHeadersWidth = 51;
+            this.dataGridView14.RowTemplate.Height = 24;
+            this.dataGridView14.Size = new System.Drawing.Size(232, 234);
+>>>>>>> parent of 4444346 (Update Form5.Designer.cs)
             this.dataGridView14.TabIndex = 25;
             // 
             // dataGridView15
@@ -275,11 +296,20 @@
             this.dataGridView15.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView15.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+<<<<<<< HEAD
             this.dataGridView15.Location = new System.Drawing.Point(642, 506);
             this.dataGridView15.Name = "dataGridView15";
             this.dataGridView15.RowHeadersWidth = 51;
             this.dataGridView15.RowTemplate.Height = 24;
             this.dataGridView15.Size = new System.Drawing.Size(150, 150);
+=======
+            this.dataGridView15.Location = new System.Drawing.Point(963, 791);
+            this.dataGridView15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView15.Name = "dataGridView15";
+            this.dataGridView15.RowHeadersWidth = 51;
+            this.dataGridView15.RowTemplate.Height = 24;
+            this.dataGridView15.Size = new System.Drawing.Size(225, 234);
+>>>>>>> parent of 4444346 (Update Form5.Designer.cs)
             this.dataGridView15.TabIndex = 26;
             // 
             // linkLabel17
@@ -337,6 +367,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.IndianRed;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label3.Location = new System.Drawing.Point(203, 506);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 17);
@@ -345,6 +376,15 @@
             // 
 <<<<<<< HEAD
 =======
+=======
+            this.label3.Location = new System.Drawing.Point(304, 791);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(154, 26);
+            this.label3.TabIndex = 66;
+            this.label3.Text = "Old Members";
+            // 
+>>>>>>> parent of 4444346 (Update Form5.Designer.cs)
             // label4
             // 
             this.label4.AutoSize = true;
@@ -538,7 +578,10 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
+<<<<<<< HEAD
 >>>>>>> parent of ac4dc05 (form connection)
+=======
+>>>>>>> parent of 4444346 (Update Form5.Designer.cs)
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -607,7 +650,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 4444346 (Update Form5.Designer.cs)
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
