@@ -92,7 +92,7 @@ namespace WindowsForms
 
         private void chartVisitorTracking_Click(object sender, EventArgs e)
         {
-
+            //yuhkj
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
