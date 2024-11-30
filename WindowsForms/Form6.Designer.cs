@@ -354,7 +354,7 @@
             // 
             this.button7.BackColor = System.Drawing.Color.IndianRed;
             this.button7.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(607, 32);
+            this.button7.Location = new System.Drawing.Point(610, 32);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 46;
