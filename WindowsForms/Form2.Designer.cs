@@ -110,7 +110,7 @@
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(58, 402);
+            this.textBox2.Location = new System.Drawing.Point(58, 465);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(150, 24);
@@ -122,7 +122,7 @@
             this.con.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.con.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.con.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.con.Location = new System.Drawing.Point(27, 472);
+            this.con.Location = new System.Drawing.Point(46, 529);
             this.con.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.con.Name = "con";
             this.con.Size = new System.Drawing.Size(162, 22);
@@ -143,17 +143,18 @@
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox5.Location = new System.Drawing.Point(230, 402);
+            this.textBox5.Location = new System.Drawing.Point(230, 525);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(229, 31);
             this.textBox5.TabIndex = 6;
+            this.textBox5.Text = "x";
             this.textBox5.UseSystemPasswordChar = true;
             // 
             // textBox6
             // 
             this.textBox6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox6.Location = new System.Drawing.Point(230, 469);
+            this.textBox6.Location = new System.Drawing.Point(230, 465);
             this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(229, 31);
@@ -175,7 +176,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(67, 525);
+            this.label1.Location = new System.Drawing.Point(62, 398);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 25);
             this.label1.TabIndex = 9;
@@ -184,11 +185,11 @@
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox3.Location = new System.Drawing.Point(230, 525);
+            this.textBox3.Location = new System.Drawing.Point(230, 398);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(239, 31);
             this.textBox3.TabIndex = 10;
-           
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged_1);
             // 
             // Form2
             // 
