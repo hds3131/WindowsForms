@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
@@ -153,6 +153,7 @@
             this.linkLabel4.TabIndex = 14;
             this.linkLabel4.TabStop = true;
             this.linkLabel4.Text = "Logout";
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
             // 
             // label6
             // 
@@ -318,16 +319,16 @@
             // 
             // chartVisitorTracking
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartVisitorTracking.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartVisitorTracking.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chartVisitorTracking.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartVisitorTracking.Legends.Add(legend2);
             this.chartVisitorTracking.Location = new System.Drawing.Point(353, 148);
             this.chartVisitorTracking.Name = "chartVisitorTracking";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartVisitorTracking.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartVisitorTracking.Series.Add(series2);
             this.chartVisitorTracking.Size = new System.Drawing.Size(943, 803);
             this.chartVisitorTracking.TabIndex = 70;
             this.chartVisitorTracking.Text = "chartVisitorTracking";

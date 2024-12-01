@@ -22,7 +22,7 @@ namespace WindowsForms
 
         private void LoadVisitorTrackingData()
         {
-            string connectionString = @"Server=np:\\.\pipe\LOCALDB##653b9183\tsql\query;Database=mydbs;Integrated Security=true;";
+            string connectionString = @"Server=np:\\.\pipe\LOCALDB#653b9183\tsql\query;Database=mydbs;Integrated Security=true;";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -50,9 +50,10 @@ namespace WindowsForms
 
                         foreach (DataRow row in dataTable.Rows)
                         {
-                            DateTime visitDate = Convert.ToDateTime(row["VisitDate"]);
-                            bool isMember = Convert.ToBoolean(row["IsMember"]);
-                            int visitCount = Convert.ToInt32(row["VisitCount"]);
+                            DateTime visitDate = row["VisitDate"] != DBNull.Value ? Convert.ToDateTime(row["VisitDate"]) : DateTime.MinValue;
+                            bool isMember = row["IsMember"] != DBNull.Value ? Convert.ToBoolean(row["IsMember"]) : false;
+                            int visitCount = row["VisitCount"] != DBNull.Value ? Convert.ToInt32(row["VisitCount"]) : 0;
+
 
                             if (isMember)
                             {
@@ -84,6 +85,13 @@ namespace WindowsForms
         private void chartVisitorTracking_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form1 signUpForm = new Form1();
+            signUpForm.Show();
+            this.Hide();
         }
     }
 }

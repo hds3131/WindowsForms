@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static WindowsForms.Form2;
 using BCrypt.Net;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace WindowsForms
 {
@@ -18,6 +19,7 @@ namespace WindowsForms
         public Form1()
         {
             InitializeComponent();
+            textBox4.PasswordChar = '•';
             //hi amy
         }
 
@@ -49,7 +51,7 @@ namespace WindowsForms
         private void button1_Click_1(object sender, EventArgs e)
         {
             string username = textBox3.Text;
-            string password = textBox4.Text;
+            string Password = textBox4.Text;
 
             string connectionString = @"Server=np:\\.\pipe\LOCALDB#653b9183\tsql\query;Database=mydbs;Integrated Security=true;";
 
@@ -60,16 +62,16 @@ namespace WindowsForms
                     connection.Open();
 
                     // Query to get the hashed password from the database for admin login
-                    string query = "SELECT Password FROM admin WHERE Username = @Username";
+                    string query = "SELECT Password FROM Users WHERE Username = @Username";
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@Username", username);
 
                         var dbPassword = command.ExecuteScalar() as string;
 
-                        if (dbPassword != null && BCrypt.Net.BCrypt.Verify(password, dbPassword))
+                        if (dbPassword != null && BCrypt.Net.BCrypt.Verify(Password, dbPassword))
                         {
-                            MessageBox.Show("Admin login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(" login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                             // Proceed to the admin area or dashboard as needed
                             Form5 form5 = new Form5();
@@ -105,6 +107,7 @@ namespace WindowsForms
         {
             Form2 signUpForm = new Form2();
             signUpForm.Show();
+            this.Hide();
         }
     }
 }

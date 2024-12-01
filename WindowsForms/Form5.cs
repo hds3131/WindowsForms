@@ -91,5 +91,12 @@ namespace WindowsForms
         {
 
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Form7 form3 = new Form7();
+            form3.Show();
+            this.Hide();
+        }
     }
 }
