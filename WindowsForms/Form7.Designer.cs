@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
@@ -127,7 +127,7 @@
             this.linkLabel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.linkLabel4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel4.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel4.Location = new System.Drawing.Point(1144, 67);
+            this.linkLabel4.Location = new System.Drawing.Point(1142, 67);
             this.linkLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(133, 44);
@@ -177,12 +177,12 @@
             // 
             this.dataGridView16.BackgroundColor = System.Drawing.Color.IndianRed;
             this.dataGridView16.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView16.Location = new System.Drawing.Point(34, 34);
+            this.dataGridView16.Location = new System.Drawing.Point(18, 34);
             this.dataGridView16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView16.Name = "dataGridView16";
             this.dataGridView16.RowHeadersWidth = 51;
             this.dataGridView16.RowTemplate.Height = 24;
-            this.dataGridView16.Size = new System.Drawing.Size(312, 105);
+            this.dataGridView16.Size = new System.Drawing.Size(328, 105);
             this.dataGridView16.TabIndex = 64;
             // 
             // textBox17
@@ -249,16 +249,16 @@
             // 
             // chartVisitorTracking
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartVisitorTracking.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartVisitorTracking.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chartVisitorTracking.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartVisitorTracking.Legends.Add(legend2);
             this.chartVisitorTracking.Location = new System.Drawing.Point(353, 148);
             this.chartVisitorTracking.Name = "chartVisitorTracking";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartVisitorTracking.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartVisitorTracking.Series.Add(series2);
             this.chartVisitorTracking.Size = new System.Drawing.Size(949, 828);
             this.chartVisitorTracking.TabIndex = 70;
             this.chartVisitorTracking.Text = "chartVisitorTracking";

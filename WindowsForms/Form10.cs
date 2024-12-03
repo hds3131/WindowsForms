@@ -19,7 +19,7 @@ namespace WindowsForms
         private void LoadUpcomingEvents()
         {
             string connectionString = @"Server=np:\\.\pipe\LOCALDB#653b9183\tsql\query;Database=mydbs;Integrated Security=true;";
-            string query = "SELECT EventName, EventDate FROM events ORDER BY EventDate";
+            string query = "SELECT EventName, EventDate, EventDetails FROM events ORDER BY EventDate";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -29,11 +29,14 @@ namespace WindowsForms
                     SqlCommand command = new SqlCommand(query, connection);
                     SqlDataReader reader = command.ExecuteReader();
 
+                    upcomingEventsList.Items.Clear(); // Clear existing items
+
                     while (reader.Read())
                     {
                         string eventName = reader["EventName"].ToString();
                         DateTime eventDate = Convert.ToDateTime(reader["EventDate"]);
-                        upcomingEventsList.Items.Add($"{eventName} - {eventDate:dd MMM yyyy}");
+                        string eventDetails = reader["EventDetails"].ToString();
+                        upcomingEventsList.Items.Add($"{eventName} - {eventDate:dd MMM yyyy} - {eventDetails}");
                         eventCalendar.AddBoldedDate(eventDate);
                     }
 
@@ -49,7 +52,7 @@ namespace WindowsForms
         private void ShowEventsOnDate(object sender, DateRangeEventArgs e)
         {
             string connectionString = @"Server=np:\\.\pipe\LOCALDB#653b9183\tsql\query;Database=mydbs;Integrated Security=true;";
-            string query = "SELECT EventName, EventDate FROM events WHERE EventDate = @SelectedDate";
+            string query = "SELECT EventName, EventDate, EventDetails FROM events WHERE EventDate = @SelectedDate";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -64,12 +67,13 @@ namespace WindowsForms
                     while (reader.Read())
                     {
                         string eventName = reader["EventName"].ToString();
-                        eventDetails += $"Event: {eventName}\n";
+                        string details = reader["EventDetails"].ToString();
+                        eventDetails += $"Event: {eventName}\nDetails: {details}\n\n";
                     }
 
                     if (!string.IsNullOrEmpty(eventDetails))
                     {
-                        eventDetails += "\nWould you like to book this event?";
+                        eventDetails += "Would you like to book this event?";
                         DialogResult result = MessageBox.Show(eventDetails, "Event Details", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
                         if (result == DialogResult.Yes)
@@ -130,6 +134,16 @@ namespace WindowsForms
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quickActionsLabel_Click(object sender, EventArgs e)
         {
 
         }

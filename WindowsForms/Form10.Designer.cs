@@ -78,7 +78,7 @@
             this.upcomingEventsList.Location = new System.Drawing.Point(353, 224);
             this.upcomingEventsList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.upcomingEventsList.Name = "upcomingEventsList";
-            this.upcomingEventsList.Size = new System.Drawing.Size(448, 132);
+            this.upcomingEventsList.Size = new System.Drawing.Size(949, 164);
             this.upcomingEventsList.TabIndex = 4;
             // 
             // quickActionsLabel
@@ -86,19 +86,20 @@
             this.quickActionsLabel.AutoSize = true;
             this.quickActionsLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.quickActionsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.quickActionsLabel.Location = new System.Drawing.Point(346, 747);
+            this.quickActionsLabel.Location = new System.Drawing.Point(346, 782);
             this.quickActionsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.quickActionsLabel.Name = "quickActionsLabel";
             this.quickActionsLabel.Size = new System.Drawing.Size(232, 37);
             this.quickActionsLabel.TabIndex = 5;
             this.quickActionsLabel.Text = "Quick Actions";
+            this.quickActionsLabel.Click += new System.EventHandler(this.quickActionsLabel_Click);
             // 
             // bookEventButton
             // 
             this.bookEventButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
             this.bookEventButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.bookEventButton.ForeColor = System.Drawing.Color.White;
-            this.bookEventButton.Location = new System.Drawing.Point(353, 799);
+            this.bookEventButton.Location = new System.Drawing.Point(353, 839);
             this.bookEventButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bookEventButton.Name = "bookEventButton";
             this.bookEventButton.Size = new System.Drawing.Size(180, 62);
@@ -112,10 +113,10 @@
             this.cancelBookingButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
             this.cancelBookingButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.cancelBookingButton.ForeColor = System.Drawing.Color.White;
-            this.cancelBookingButton.Location = new System.Drawing.Point(585, 799);
+            this.cancelBookingButton.Location = new System.Drawing.Point(564, 847);
             this.cancelBookingButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cancelBookingButton.Name = "cancelBookingButton";
-            this.cancelBookingButton.Size = new System.Drawing.Size(225, 62);
+            this.cancelBookingButton.Size = new System.Drawing.Size(225, 47);
             this.cancelBookingButton.TabIndex = 7;
             this.cancelBookingButton.Text = "Cancel Booking";
             this.cancelBookingButton.UseVisualStyleBackColor = false;
@@ -123,8 +124,8 @@
             // 
             // eventCalendar
             // 
-            this.eventCalendar.Location = new System.Drawing.Point(353, 416);
-            this.eventCalendar.Margin = new System.Windows.Forms.Padding(14, 14, 14, 14);
+            this.eventCalendar.Location = new System.Drawing.Point(353, 442);
+            this.eventCalendar.Margin = new System.Windows.Forms.Padding(14);
             this.eventCalendar.MaxSelectionCount = 1;
             this.eventCalendar.Name = "eventCalendar";
             this.eventCalendar.TabIndex = 8;
@@ -163,12 +164,13 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.label1.Location = new System.Drawing.Point(346, 365);
+            this.label1.Location = new System.Drawing.Point(346, 391);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(250, 37);
             this.label1.TabIndex = 13;
             this.label1.Text = "Event Calendar";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dataGridView3
             // 
