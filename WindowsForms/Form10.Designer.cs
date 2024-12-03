@@ -80,6 +80,7 @@
             this.upcomingEventsList.Name = "upcomingEventsList";
             this.upcomingEventsList.Size = new System.Drawing.Size(949, 164);
             this.upcomingEventsList.TabIndex = 4;
+            this.upcomingEventsList.SelectedIndexChanged += new System.EventHandler(this.upcomingEventsList_SelectedIndexChanged);
             // 
             // quickActionsLabel
             // 

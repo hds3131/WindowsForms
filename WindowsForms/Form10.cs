@@ -11,7 +11,7 @@ namespace WindowsForms
             InitializeComponent();
         }
 
-        private void Form10_Load(object sender, EventArgs e)
+        private void upcomingEventsList_SelectedIndexChanged(object sender, EventArgs e)
         {
             LoadUpcomingEvents();
         }
@@ -19,7 +19,7 @@ namespace WindowsForms
         private void LoadUpcomingEvents()
         {
             string connectionString = @"Server=np:\\.\pipe\LOCALDB#653b9183\tsql\query;Database=mydbs;Integrated Security=true;";
-            string query = "SELECT EventName, EventDate, EventDetails FROM events ORDER BY EventDate";
+            string query = "SELECT EventName, EventDate, Location, Attendees, EventDetails, EventType FROM events ORDER BY EventDate";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -33,13 +33,29 @@ namespace WindowsForms
 
                     while (reader.Read())
                     {
-                        string eventName = reader["EventName"].ToString();
-                        DateTime eventDate = Convert.ToDateTime(reader["EventDate"]);
-                        string eventDetails = reader["EventDetails"].ToString();
-                        upcomingEventsList.Items.Add($"{eventName} - {eventDate:dd MMM yyyy} - {eventDetails}");
-                        eventCalendar.AddBoldedDate(eventDate);
+                        // Read event details safely, handling potential null values
+                        string eventName = reader["EventName"] != DBNull.Value ? reader["EventName"].ToString() : "N/A";
+                        DateTime eventDate = reader["EventDate"] != DBNull.Value ? Convert.ToDateTime(reader["EventDate"]) : DateTime.MinValue;
+                        string location = reader["Location"] != DBNull.Value ? reader["Location"].ToString() : "N/A";
+                        int attendees = reader["Attendees"] != DBNull.Value ? Convert.ToInt32(reader["Attendees"]) : 0;
+                        string eventDetails = reader["EventDetails"] != DBNull.Value ? reader["EventDetails"].ToString() : "N/A";
+                        string eventType = reader["EventType"] != DBNull.Value ? reader["EventType"].ToString() : "N/A";
+
+                        // Debugging: Log the values to verify they are correct
+                        Console.WriteLine($"Event: {eventName}, Date: {eventDate}, Location: {location}, Attendees: {attendees}, Type: {eventType}");
+
+                        // Format the event information for the upcoming events list
+                        string eventInfo = $"{eventName} - {eventDate:dd MMM yyyy} - {location} - {eventType} - {attendees} attendees";
+                        upcomingEventsList.Items.Add(eventInfo);
+
+                        // Add the event date to the calendar as bolded
+                        if (eventDate != DateTime.MinValue)
+                        {
+                            eventCalendar.AddBoldedDate(eventDate);
+                        }
                     }
 
+                    // Refresh calendar to show bolded dates
                     eventCalendar.UpdateBoldedDates();
                 }
                 catch (Exception ex)
@@ -48,6 +64,9 @@ namespace WindowsForms
                 }
             }
         }
+
+
+
 
         private void ShowEventsOnDate(object sender, DateRangeEventArgs e)
         {
@@ -146,6 +165,11 @@ namespace WindowsForms
         private void quickActionsLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void upcomingEventsList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }
