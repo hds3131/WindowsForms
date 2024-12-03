@@ -211,13 +211,13 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 40;
-            this.textBox1.Text = "Name";
+            this.textBox1.Text = "Name  :";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(300, 108);
+            this.textBox2.Location = new System.Drawing.Point(246, 106);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.Size = new System.Drawing.Size(346, 22);
             this.textBox2.TabIndex = 41;
             // 
             // textBox3
@@ -229,13 +229,13 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 42;
-            this.textBox3.Text = "Email";
+            this.textBox3.Text = "Email :";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(300, 136);
+            this.textBox4.Location = new System.Drawing.Point(246, 134);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
+            this.textBox4.Size = new System.Drawing.Size(346, 22);
             this.textBox4.TabIndex = 43;
             // 
             // textBox7
@@ -247,7 +247,7 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 44;
-            this.textBox7.Text = "Feedback";
+            this.textBox7.Text = "Feedback:";
             // 
             // textBox8
             // 
