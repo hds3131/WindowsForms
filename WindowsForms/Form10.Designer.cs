@@ -79,7 +79,6 @@
             this.upcomingEventsList.Name = "upcomingEventsList";
             this.upcomingEventsList.Size = new System.Drawing.Size(634, 99);
             this.upcomingEventsList.TabIndex = 4;
-            
             // 
             // quickActionsLabel
             // 
@@ -222,6 +221,7 @@
             this.button2.TabIndex = 51;
             this.button2.Text = "Dashboard";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView4
             // 
