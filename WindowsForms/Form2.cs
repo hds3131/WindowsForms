@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BCrypt.Net;
 
 namespace WindowsForms
 {
@@ -17,11 +17,6 @@ namespace WindowsForms
         public Form2()
         {
             InitializeComponent();
-        }
-        public class SignUpForm : Form
-        {
-            
-            
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -36,7 +31,6 @@ namespace WindowsForms
             string confirmPassword = textBox6.Text;
             string email = textBox3.Text;
 
-
             // Basic validation
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(email))
             {
@@ -50,8 +44,11 @@ namespace WindowsForms
                 return;
             }
 
+            // Hash the password
+            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
+
             // Connection string for your local database server name
-            string connectionString = @"Server=np:\\.\pipe\LOCALDB#CE1246A4\tsql\query;Database=mydb;Integrated Security=true;";
+            string connectionString = @"Server=np:\\.\pipe\LOCALDB#653b9183\tsql\query;Database=mydbs;Integrated Security=true;";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -78,7 +75,7 @@ namespace WindowsForms
                     using (SqlCommand command = new SqlCommand(insertQuery, connection))
                     {
                         command.Parameters.AddWithValue("@Username", username);
-                        command.Parameters.AddWithValue("@Password", password); // Ideally, password should be hashed
+                        command.Parameters.AddWithValue("@Password", hashedPassword); // Store hashed password
                         command.Parameters.AddWithValue("@Email", email);
                         command.Parameters.AddWithValue("@CreatedAt", DateTime.Now);
 
@@ -107,13 +104,8 @@ namespace WindowsForms
 
         }
 
-        private void textBox3_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
-        {//dwd
+        {
 
         }
 
@@ -122,7 +114,10 @@ namespace WindowsForms
             Form1 signUpForm = new Form1();
             signUpForm.Show();
         }
+
+        private void textBox3_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
-    
-

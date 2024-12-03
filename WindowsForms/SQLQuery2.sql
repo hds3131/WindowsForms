@@ -1,2 +1,0 @@
-﻿ALTER TABLE VisitorTracking
-ADD IsMember BIT NOT NULL DEFAULT 0;

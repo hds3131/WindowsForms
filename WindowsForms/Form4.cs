@@ -8,13 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace WindowsForms
 {
-    public partial class Adminsignup : Form
+    public partial class Form4 : Form
     {
-        public Adminsignup()
+        public Form4()
         {
             InitializeComponent();
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
