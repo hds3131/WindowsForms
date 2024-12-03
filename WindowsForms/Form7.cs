@@ -93,5 +93,13 @@ namespace WindowsForms
             signUpForm.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form10 Eventsform = new Form10();
+            Eventsform.Show();
+            this.Hide();
+        }
     }
-}
+    }
+
