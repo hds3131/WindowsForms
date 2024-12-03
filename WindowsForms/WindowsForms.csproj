@@ -12,7 +12,6 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -25,6 +24,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -53,7 +53,6 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -70,6 +69,24 @@
     </Compile>
     <Compile Include="adminlastform.Designer.cs">
       <DependentUpon>adminlastform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminsignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminsignup.Designer.cs">
+      <DependentUpon>Adminsignup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventsPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventsPayment.Designer.cs">
+      <DependentUpon>EventsPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form13.Designer.cs">
+      <DependentUpon>Form13.cs</DependentUpon>
     </Compile>
     <Compile Include="loginpage.cs">
       <SubType>Form</SubType>
@@ -141,6 +158,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="adminlastform.resx">
       <DependentUpon>adminlastform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventsPayment.resx">
+      <DependentUpon>EventsPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form13.resx">
+      <DependentUpon>Form13.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginpage.resx">
       <DependentUpon>loginpage.cs</DependentUpon>
