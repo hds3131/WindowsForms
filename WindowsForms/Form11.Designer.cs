@@ -290,6 +290,7 @@
             this.button3.TabIndex = 48;
             this.button3.Text = "Community and Chats";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -301,6 +302,7 @@
             this.button4.TabIndex = 49;
             this.button4.Text = "Events";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -310,7 +312,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 50;
-            this.button5.Text = "More";
+            this.button5.Text = "Feedback";
             this.button5.UseVisualStyleBackColor = false;
             // 
             // button6

@@ -166,12 +166,6 @@ namespace WindowsForms
         {
 
         }
-
-        private void upcomingEventsList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             
