@@ -29,21 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.dataGridView13 = new System.Windows.Forms.DataGridView();
             this.label15 = new System.Windows.Forms.Label();
             this.dataGridView16 = new System.Windows.Forms.DataGridView();
@@ -57,7 +52,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView16)).BeginInit();
@@ -94,12 +88,12 @@
             this.dataGridView3.BackgroundColor = System.Drawing.Color.IndianRed;
             this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(34, 148);
+            this.dataGridView3.Location = new System.Drawing.Point(18, 148);
             this.dataGridView3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(312, 1175);
+            this.dataGridView3.Size = new System.Drawing.Size(328, 828);
             this.dataGridView3.TabIndex = 2;
             // 
             // dataGridView4
@@ -114,19 +108,6 @@
             this.dataGridView4.RowTemplate.Height = 24;
             this.dataGridView4.Size = new System.Drawing.Size(940, 803);
             this.dataGridView4.TabIndex = 3;
-            // 
-            // dataGridView5
-            // 
-            this.dataGridView5.BackgroundColor = System.Drawing.Color.IndianRed;
-            this.dataGridView5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(356, 978);
-            this.dataGridView5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.RowHeadersWidth = 51;
-            this.dataGridView5.RowTemplate.Height = 24;
-            this.dataGridView5.Size = new System.Drawing.Size(940, 345);
-            this.dataGridView5.TabIndex = 4;
             // 
             // pictureBox2
             // 
@@ -146,7 +127,7 @@
             this.linkLabel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.linkLabel4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel4.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel4.Location = new System.Drawing.Point(114, 727);
+            this.linkLabel4.Location = new System.Drawing.Point(1144, 67);
             this.linkLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(133, 44);
@@ -166,58 +147,6 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(2, 38);
             this.label6.TabIndex = 22;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.DarkGray;
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(416, 1022);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(99, 34);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "Events";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.DarkGray;
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(555, 1022);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(164, 34);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "Tickets Sold";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.DarkGray;
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(783, 1022);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 34);
-            this.label9.TabIndex = 25;
-            this.label9.Text = "Total";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.DarkGray;
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(939, 1022);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(101, 34);
-            this.label10.TabIndex = 26;
-            this.label10.Text = "Vistors";
             // 
             // dataGridView13
             // 
@@ -265,7 +194,7 @@
             this.textBox17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox17.Multiline = true;
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(244, 41);
+            this.textBox17.Size = new System.Drawing.Size(256, 41);
             this.textBox17.TabIndex = 65;
             this.textBox17.Text = "Togather Culture";
             // 
@@ -320,17 +249,17 @@
             // 
             // chartVisitorTracking
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartVisitorTracking.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartVisitorTracking.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chartVisitorTracking.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartVisitorTracking.Legends.Add(legend1);
             this.chartVisitorTracking.Location = new System.Drawing.Point(353, 148);
             this.chartVisitorTracking.Name = "chartVisitorTracking";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chartVisitorTracking.Series.Add(series3);
-            this.chartVisitorTracking.Size = new System.Drawing.Size(943, 803);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartVisitorTracking.Series.Add(series1);
+            this.chartVisitorTracking.Size = new System.Drawing.Size(949, 828);
             this.chartVisitorTracking.TabIndex = 70;
             this.chartVisitorTracking.Text = "chartVisitorTracking";
             this.chartVisitorTracking.Click += new System.EventHandler(this.chartVisitorTracking_Click);
@@ -339,7 +268,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1314, 1358);
+            this.ClientSize = new System.Drawing.Size(1314, 988);
             this.Controls.Add(this.chartVisitorTracking);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -349,14 +278,9 @@
             this.Controls.Add(this.dataGridView16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.dataGridView13);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.dataGridView5);
             this.Controls.Add(this.dataGridView4);
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.dataGridView2);
@@ -368,7 +292,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView16)).EndInit();
@@ -384,14 +307,9 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.LinkLabel linkLabel4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dataGridView13;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DataGridView dataGridView16;
