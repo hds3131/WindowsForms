@@ -84,6 +84,7 @@
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(169, 482);
             this.dataGridView2.TabIndex = 1;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // dataGridView3
             // 
@@ -132,6 +133,7 @@
             this.linkLabel1.TabIndex = 11;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Logout";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // textBox5
             // 
