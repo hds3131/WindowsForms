@@ -100,6 +100,13 @@ namespace WindowsForms
             Eventsform.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form5 Eventsform = new Form5();
+            Eventsform.Show();
+            this.Hide();
+        }
     }
     }
 
