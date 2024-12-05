@@ -166,14 +166,15 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.BackColor = System.Drawing.Color.DarkGray;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(38, 251);
+            this.button1.Location = new System.Drawing.Point(703, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(78, 37);
+            this.button1.Size = new System.Drawing.Size(85, 33);
             this.button1.TabIndex = 8;
             this.button1.Text = "Logout";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -185,6 +186,7 @@
             this.button2.TabIndex = 9;
             this.button2.Text = "Dashboard";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -196,6 +198,7 @@
             this.button3.TabIndex = 10;
             this.button3.Text = "Events";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -207,6 +210,7 @@
             this.button4.TabIndex = 11;
             this.button4.Text = "Communiy and chats";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -216,8 +220,9 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 12;
-            this.button5.Text = "More";
+            this.button5.Text = "Feedback";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // textBox1
             // 
@@ -295,7 +300,7 @@
             this.textBox8.BackColor = System.Drawing.Color.Tomato;
             this.textBox8.Location = new System.Drawing.Point(274, 176);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 22);
+            this.textBox8.Size = new System.Drawing.Size(54, 22);
             this.textBox8.TabIndex = 20;
             // 
             // textBox9
@@ -363,7 +368,7 @@
             this.textBox15.BackColor = System.Drawing.Color.Tomato;
             this.textBox15.Location = new System.Drawing.Point(609, 176);
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 22);
+            this.textBox15.Size = new System.Drawing.Size(49, 22);
             this.textBox15.TabIndex = 27;
             // 
             // textBox16
@@ -444,6 +449,7 @@
             this.button6.TabIndex = 35;
             this.button6.Text = "Pay";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -455,6 +461,7 @@
             this.button7.TabIndex = 36;
             this.button7.Text = "Pay";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 

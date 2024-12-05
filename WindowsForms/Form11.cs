@@ -53,7 +53,7 @@ namespace WindowsForms
         public void SubmitFeedback(string name, string email, string feedback)
         {
             // Use the connection string from App.config
-            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["FeedbackDB"].ConnectionString;
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ServiceBasedDB"].ConnectionString;
 
             try
             {
@@ -108,6 +108,11 @@ namespace WindowsForms
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
         {
 
         }
