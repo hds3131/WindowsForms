@@ -109,7 +109,7 @@
             this.linkLabel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.linkLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(536, 26);
+            this.linkLabel1.Location = new System.Drawing.Point(536, 22);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(80, 28);
             this.linkLabel1.TabIndex = 11;

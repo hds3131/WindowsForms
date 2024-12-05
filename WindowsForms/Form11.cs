@@ -52,36 +52,31 @@ namespace WindowsForms
 
         public void SubmitFeedback(string name, string email, string feedback)
         {
-            // Connection string using Integrated Security
-            string connectionString = "Server=localhost;Database=FeedbackDB;Integrated Security=True;";
+            // Use the connection string from App.config
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["FeedbackDB"].ConnectionString;
 
             try
             {
-                // 'using' block to handle the database connection
-                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    connection.Open();  // Open the connection to MySQL
+                    connection.Open();
 
-                    // SQL query to insert data
                     string query = "INSERT INTO FeedbackTable (Name, Email, Feedback) VALUES (@Name, @Email, @Feedback)";
 
-                    // 'using' block to handle the command
-                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
                     {
                         cmd.Parameters.AddWithValue("@Name", name);
                         cmd.Parameters.AddWithValue("@Email", email);
                         cmd.Parameters.AddWithValue("@Feedback", feedback);
 
-                        cmd.ExecuteNonQuery();  // Execute the query
+                        cmd.ExecuteNonQuery();
                     }
                 }
 
-                // Success message
                 MessageBox.Show("Feedback submitted successfully!");
             }
             catch (Exception ex)
             {
-                // Error message
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
         }

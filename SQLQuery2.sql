@@ -1,0 +1,6 @@
+﻿CREATE TABLE FeedbackTable (
+    Id INT PRIMARY KEY,
+    Name VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) NOT NULL,
+    Feedback TEXT NOT NULL
+);
