@@ -53,8 +53,7 @@ namespace WindowsForms
             string username = textBox3.Text;
             string Password = textBox4.Text;
 
-            string connectionString = @"Server=np:\\.\pipe\LOCALDB#653b9183\tsql\query;Database=mydbs;Integrated Security=true;";
-
+             string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ServiceBasedDB"].ConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
