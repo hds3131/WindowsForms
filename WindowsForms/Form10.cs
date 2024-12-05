@@ -171,36 +171,7 @@ namespace WindowsForms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form8 signUpForm = new Form8();
-            signUpForm.Show();
-            this.Hide();
-        }
 
-        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Form1 signUpForm = new Form1();
-            signUpForm.Show();
-            this.Hide();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            Form11 signUpForm = new Form11();
-            signUpForm.Show();
-            this.Hide();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Form7 signUpForm = new Form7();
-            signUpForm.Show();
-            this.Hide();
         }
     }
-    }
-
+}
