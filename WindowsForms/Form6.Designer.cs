@@ -264,7 +264,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(148, 23);
             this.textBox5.TabIndex = 23;
-            this.textBox5.Text = "Togather Culture";
+            this.textBox5.Text = "Together Culture";
             // 
             // button1
             // 
