@@ -77,7 +77,7 @@
             "Event 3 - 20th Dec 2024"});
             this.upcomingEventsList.Location = new System.Drawing.Point(235, 143);
             this.upcomingEventsList.Name = "upcomingEventsList";
-            this.upcomingEventsList.Size = new System.Drawing.Size(634, 99);
+            this.upcomingEventsList.Size = new System.Drawing.Size(262, 99);
             this.upcomingEventsList.TabIndex = 4;
             // 
             // quickActionsLabel
@@ -186,16 +186,16 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(747, 94);
+            this.dataGridView1.Size = new System.Drawing.Size(535, 94);
             this.dataGridView1.TabIndex = 12;
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Tomato;
             this.button4.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(320, 9);
+            this.button4.Location = new System.Drawing.Point(314, 28);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(93, 65);
+            this.button4.Size = new System.Drawing.Size(93, 25);
             this.button4.TabIndex = 53;
             this.button4.Text = "Events";
             this.button4.UseVisualStyleBackColor = false;
@@ -204,9 +204,9 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Tomato;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(431, 9);
+            this.button3.Location = new System.Drawing.Point(431, 22);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(159, 65);
+            this.button3.Size = new System.Drawing.Size(159, 31);
             this.button3.TabIndex = 52;
             this.button3.Text = "Community and Chats";
             this.button3.UseVisualStyleBackColor = false;
@@ -215,9 +215,9 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Tomato;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(200, 9);
+            this.button2.Location = new System.Drawing.Point(200, 28);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 65);
+            this.button2.Size = new System.Drawing.Size(100, 25);
             this.button2.TabIndex = 51;
             this.button2.Text = "Dashboard";
             this.button2.UseVisualStyleBackColor = false;
@@ -232,16 +232,16 @@
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.RowHeadersWidth = 51;
             this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.Size = new System.Drawing.Size(720, 94);
+            this.dataGridView4.Size = new System.Drawing.Size(529, 94);
             this.dataGridView4.TabIndex = 50;
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Tomato;
             this.button5.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(606, 9);
+            this.button5.Location = new System.Drawing.Point(596, 22);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(177, 65);
+            this.button5.Size = new System.Drawing.Size(117, 31);
             this.button5.TabIndex = 54;
             this.button5.Text = "FeedBack";
             this.button5.UseVisualStyleBackColor = false;
@@ -276,7 +276,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
-            this.ClientSize = new System.Drawing.Size(920, 600);
+            this.ClientSize = new System.Drawing.Size(742, 600);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button5);

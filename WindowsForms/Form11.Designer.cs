@@ -109,7 +109,7 @@
             this.linkLabel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.linkLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(536, 22);
+            this.linkLabel1.Location = new System.Drawing.Point(43, 300);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(80, 28);
             this.linkLabel1.TabIndex = 11;
@@ -165,6 +165,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.Color.Tomato;
             this.textBox2.Location = new System.Drawing.Point(246, 106);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(346, 22);
@@ -183,6 +184,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.BackColor = System.Drawing.Color.Tomato;
             this.textBox4.Location = new System.Drawing.Point(246, 134);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(346, 22);
@@ -201,6 +203,7 @@
             // 
             // textBox8
             // 
+            this.textBox8.BackColor = System.Drawing.Color.Tomato;
             this.textBox8.Location = new System.Drawing.Point(190, 190);
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
