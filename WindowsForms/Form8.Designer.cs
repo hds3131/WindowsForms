@@ -312,6 +312,7 @@
             this.button6.TabIndex = 50;
             this.button6.Text = "Events";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
