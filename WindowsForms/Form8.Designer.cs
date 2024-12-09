@@ -205,7 +205,7 @@
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(100, 20);
             this.textBox20.TabIndex = 39;
-            this.textBox20.Text = "Intrest";
+            this.textBox20.Text = "Interest";
             // 
             // textBox21
             // 
@@ -332,7 +332,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 23);
             this.button8.TabIndex = 52;
-            this.button8.Text = "More";
+            this.button8.Text = "Feedback";
             this.button8.UseVisualStyleBackColor = false;
             // 
             // Form8
