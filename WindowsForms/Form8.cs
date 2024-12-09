@@ -33,5 +33,20 @@ namespace WindowsForms
             Form6 form6 = new Form6();
             form6.Show();
         }
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form6 form6 = new Form6();
+            form6.Show();
+            //takes to events dashboard
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form9 form9 = new Form9();
+            form9.Show();
+            //takes to community and chat screen
+        }
+
+        
     }
 }
