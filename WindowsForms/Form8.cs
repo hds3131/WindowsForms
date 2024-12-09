@@ -51,5 +51,15 @@ namespace WindowsForms
         {
 
         }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox23_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

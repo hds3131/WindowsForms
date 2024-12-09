@@ -205,7 +205,7 @@
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(100, 20);
             this.textBox20.TabIndex = 39;
-            this.textBox20.Text = "Intrest";
+            this.textBox20.Text = "Interest";
             // 
             // textBox21
             // 
@@ -251,7 +251,8 @@
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(142, 23);
             this.textBox23.TabIndex = 44;
-            this.textBox23.Text = "Togather Culture";
+            this.textBox23.Text = "Together Culture";
+            this.textBox23.TextChanged += new System.EventHandler(this.textBox23_TextChanged);
             // 
             // button1
             // 
@@ -299,6 +300,7 @@
             this.button5.TabIndex = 49;
             this.button5.Text = "Dashboard";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
             // button6
             // 
@@ -330,7 +332,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 23);
             this.button8.TabIndex = 52;
-            this.button8.Text = "More";
+            this.button8.Text = "Feedback";
             this.button8.UseVisualStyleBackColor = false;
             // 
             // Form8
