@@ -160,7 +160,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(166, 27);
             this.textBox1.TabIndex = 8;
-            this.textBox1.Text = "Togather Culture";
+            this.textBox1.Text = "Together Culture";
             // 
             // linkLabel1
             // 
@@ -278,6 +278,7 @@
             this.button1.TabIndex = 42;
             this.button1.Text = "Dashboard";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button2
             // 
