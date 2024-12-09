@@ -28,15 +28,12 @@ namespace WindowsForms
 
         }
 
+        
         private void button6_Click(object sender, EventArgs e)
         {
             Form6 form6 = new Form6();
             form6.Show();
-        }
-        private void button6_Click(object sender, EventArgs e)
-        {
-            Form6 form6 = new Form6();
-            form6.Show();
+            this.Hide();
             //takes to events dashboard
         }
 
@@ -44,9 +41,17 @@ namespace WindowsForms
         {
             Form9 form9 = new Form9();
             form9.Show();
+            this.Hide();
             //takes to community and chat screen
         }
+     
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Form11 form11 = new Form11();
+            form11.Show();
+            this.Hide();
+            //takes to Feedback screen
+        }
 
-        
     }
 }

@@ -39,7 +39,26 @@ namespace WindowsForms
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            Form8 form8 = new Form8();
+            form8.Show();
+            this.Hide();
+            //takes to memeber dashboard
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form6 form6 = new Form6();
+            form6.Show();
+            this.Hide();
+            //takes to events screen
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form11 form11 = new Form11();  
+            form11.Show();
+            this.Hide();
+            //takes to feedback screen 
         }
     }
 }
