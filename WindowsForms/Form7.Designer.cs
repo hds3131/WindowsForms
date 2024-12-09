@@ -86,11 +86,11 @@
             this.dataGridView3.BackgroundColor = System.Drawing.Color.IndianRed;
             this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(12, 95);
+            this.dataGridView3.Location = new System.Drawing.Point(28, 95);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(219, 530);
+            this.dataGridView3.Size = new System.Drawing.Size(185, 530);
             this.dataGridView3.TabIndex = 2;
             // 
             // dataGridView4
@@ -108,7 +108,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(62, 134);
+            this.pictureBox2.Location = new System.Drawing.Point(63, 132);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 99);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -122,7 +122,7 @@
             this.linkLabel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.linkLabel4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel4.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel4.Location = new System.Drawing.Point(761, 43);
+            this.linkLabel4.Location = new System.Drawing.Point(77, 315);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(86, 27);
             this.linkLabel4.TabIndex = 14;
@@ -168,11 +168,11 @@
             // 
             this.dataGridView16.BackgroundColor = System.Drawing.Color.IndianRed;
             this.dataGridView16.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView16.Location = new System.Drawing.Point(12, 22);
+            this.dataGridView16.Location = new System.Drawing.Point(28, 22);
             this.dataGridView16.Name = "dataGridView16";
             this.dataGridView16.RowHeadersWidth = 51;
             this.dataGridView16.RowTemplate.Height = 24;
-            this.dataGridView16.Size = new System.Drawing.Size(219, 67);
+            this.dataGridView16.Size = new System.Drawing.Size(185, 67);
             this.dataGridView16.TabIndex = 64;
             // 
             // textBox17
@@ -234,12 +234,13 @@
             // 
             // chartVisitorTracking
             // 
+            this.chartVisitorTracking.BackColor = System.Drawing.Color.IndianRed;
             chartArea1.Name = "ChartArea1";
             this.chartVisitorTracking.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartVisitorTracking.Legends.Add(legend1);
             this.chartVisitorTracking.Location = new System.Drawing.Point(235, 95);
-            this.chartVisitorTracking.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartVisitorTracking.Margin = new System.Windows.Forms.Padding(2);
             this.chartVisitorTracking.Name = "chartVisitorTracking";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
