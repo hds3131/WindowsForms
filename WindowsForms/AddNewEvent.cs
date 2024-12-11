@@ -125,5 +125,10 @@ namespace WindowsForms
         {
 
         }
+
+        private void dateTimePickerEventDate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

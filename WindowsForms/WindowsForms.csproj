@@ -117,6 +117,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddNewEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewEvent.Designer.cs">
+      <DependentUpon>AddNewEvent.cs</DependentUpon>
+    </Compile>
     <Compile Include="EventsPayment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +203,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddNewEvent.resx">
+      <DependentUpon>AddNewEvent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EventsPayment.resx">
       <DependentUpon>EventsPayment.cs</DependentUpon>
     </EmbeddedResource>

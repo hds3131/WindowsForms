@@ -27,7 +27,7 @@ namespace WindowsForms
             string email = GetAdminEmail(adminId);
 
             // Display the email in your label
-            adminEmail.Text = "Email: " + email;
+           
 
             LoadLatestUsers();
             LoadNewMembers();
@@ -134,7 +134,7 @@ namespace WindowsForms
                     gridRow.Cells.Add(new DataGridViewTextBoxCell { Value = username });
 
                     // Add Membership status column
-                    bool isMember = IsUserMember(userID); // Assuming IsUserMember is already defined
+                    bool isMember = IsUserMember(userID); // Check membership status
                     gridRow.Cells.Add(new DataGridViewTextBoxCell { Value = isMember ? "Yes" : "No" });
 
                     // Add DateCreated column
@@ -144,11 +144,24 @@ namespace WindowsForms
                     DataGridViewButtonCell blockButton = new DataGridViewButtonCell { Value = isBlocked ? "Unblock" : "Block" };
                     gridRow.Cells.Add(blockButton);
 
+                    // Create the "Accept Membership" button for non-members
+                    if (!isMember)
+                    {
+                        DataGridViewButtonCell acceptMembershipButton = new DataGridViewButtonCell { Value = "Accept" };
+                        gridRow.Cells.Add(acceptMembershipButton);
+                    }
+                    else
+                    {
+                        // Add an empty cell for members to maintain alignment
+                        gridRow.Cells.Add(new DataGridViewTextBoxCell { Value = "" });
+                    }
+
                     // Add the row to dataGridView7
                     dataGridView7.Rows.Add(gridRow);
                 }
             }
         }
+
 
 
 
@@ -227,7 +240,6 @@ namespace WindowsForms
                 string username = row["Username"].ToString();
                 int membershipTypeID = Convert.ToInt32(row["MembershipTypeID"]);
                 int userID = Convert.ToInt32(row["UserID"]);
-                string subscriptionType = GetMembershipTypeName(membershipTypeID); // Get membership type name from ID
 
                 // Create a new row for the DataGridView
                 DataGridViewRow gridRow = new DataGridViewRow();
@@ -238,8 +250,11 @@ namespace WindowsForms
                 // Add Username column
                 gridRow.Cells.Add(new DataGridViewTextBoxCell { Value = username });
 
-                // Add Subscription Type column
-                gridRow.Cells.Add(new DataGridViewTextBoxCell { Value = subscriptionType });
+                // Add Subscription Type dropdown column
+                DataGridViewComboBoxCell subscriptionDropdown = new DataGridViewComboBoxCell();
+                subscriptionDropdown.Items.AddRange(GetMembershipTypeOptions()); // Populate dropdown with membership types
+                subscriptionDropdown.Value = GetMembershipTypeName(membershipTypeID); // Set current value
+                gridRow.Cells.Add(subscriptionDropdown);
 
                 // Create the "Remove" button cell
                 DataGridViewButtonCell removeButton = new DataGridViewButtonCell { Value = "Remove" };
@@ -249,6 +264,73 @@ namespace WindowsForms
                 dataGridView10.Rows.Add(gridRow);
             }
         }
+
+
+        private string[] GetMembershipTypeOptions()
+        {
+            // Query to fetch all membership type names from the MembershipType table
+            string query = "SELECT TypeName FROM MembershipType";
+            List<string> membershipTypes = new List<string>();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+
+                try
+                {
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            membershipTypes.Add(reader["TypeName"].ToString());
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            return membershipTypes.ToArray();
+        }
+
+        private void dataGridView10_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 2) // Assuming Subscription Type dropdown is in the 3rd column (index 2)
+            {
+                int userID = Convert.ToInt32(dataGridView10.Rows[e.RowIndex].Cells[0].Value); // Get UserID
+                string newMembershipType = dataGridView10.Rows[e.RowIndex].Cells[2].Value.ToString(); // Get selected membership type
+
+                UpdateMembershipType(userID, newMembershipType);
+            }
+        }
+
+        private void UpdateMembershipType(int userID, string membershipTypeName)
+        {
+            // Query to update the MembershipTypeID based on the new membership type name
+            string query = "UPDATE Member SET MembershipTypeID = (SELECT TypeID FROM MembershipType WHERE TypeName = @TypeName) WHERE UserID = @UserID";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@TypeName", membershipTypeName);
+                command.Parameters.AddWithValue("@UserID", userID);
+
+                try
+                {
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Membership type updated successfully.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
 
 
         private string GetMembershipTypeName(int membershipTypeID)
@@ -363,6 +445,71 @@ namespace WindowsForms
                     LoadLatestUsers();
                 }
             }
+            else if (e.ColumnIndex == 5) // Assuming "Accept Membership" button is in the 6th column (index 5)
+            {
+                int userID = Convert.ToInt32(dataGridView7.Rows[e.RowIndex].Cells[0].Value); // Get UserID
+                DialogResult result = MessageBox.Show($"Are you sure you want to accept membership for user {userID}?", "Accept Membership", MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.Yes)
+                {
+                    // Call the method to add the user as a member
+                    AcceptMembership(userID);
+
+                    // Refresh both grids to reflect the change
+                    LoadLatestUsers();
+                    LoadNewMembers();
+                }
+            }
+        }
+
+
+        private void AcceptMembership(int userID)
+        {
+            // Query to insert the user into the Member table
+            string query = "INSERT INTO Member (UserID, Name, MembershipTypeID) VALUES (@UserID, @Name, @MembershipTypeID)";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@UserID", userID);
+                command.Parameters.AddWithValue("@Name", GetUsername(userID)); // Fetch the username dynamically
+                command.Parameters.AddWithValue("@MembershipTypeID", 1); // Assuming default MembershipTypeID is 1
+
+                try
+                {
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Membership accepted successfully.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+
+        private string GetUsername(int userID)
+        {
+            // Query to fetch the username from the Users table
+            string query = "SELECT Username FROM Users WHERE UserId = @UserID";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@UserID", userID);
+
+                try
+                {
+                    connection.Open();
+                    return command.ExecuteScalar()?.ToString() ?? "Unknown";
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return "Unknown";
+                }
+            }
         }
 
         private void UpdateUserBlockStatus(int userID, bool block)
@@ -395,10 +542,10 @@ namespace WindowsForms
         {
             Form7 form7 = new Form7();
 
-            
+
             form7.Show();
 
-        
+
             //this.Hide();
         }
 
@@ -478,11 +625,6 @@ namespace WindowsForms
         }
 
         private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
         {
 
         }
