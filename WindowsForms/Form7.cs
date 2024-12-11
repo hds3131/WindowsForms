@@ -30,7 +30,6 @@ namespace WindowsForms
                 {
                     connection.Open();
 
-                    // Query to get the visitor tracking data
                     string query = "SELECT VisitDate, IsMember, COUNT(*) AS VisitCount FROM VisitorTracking GROUP BY VisitDate, IsMember";
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -40,20 +39,23 @@ namespace WindowsForms
 
                         chartVisitorTracking.Series.Clear();
 
-                        Series membersSeries = new Series("Members");
-                        membersSeries.ChartType = SeriesChartType.Line;
-                        membersSeries.BorderWidth = 2;
+                        Series membersSeries = new Series("Members")
+                        {
+                            ChartType = SeriesChartType.Line,
+                            BorderWidth = 2
+                        };
 
-                        Series nonMembersSeries = new Series("Non-Members");
-                        nonMembersSeries.ChartType = SeriesChartType.Line;
-                        nonMembersSeries.BorderWidth = 2;
+                        Series nonMembersSeries = new Series("Non-Members")
+                        {
+                            ChartType = SeriesChartType.Line,
+                            BorderWidth = 2
+                        };
 
                         foreach (DataRow row in dataTable.Rows)
                         {
                             DateTime visitDate = row["VisitDate"] != DBNull.Value ? Convert.ToDateTime(row["VisitDate"]) : DateTime.MinValue;
-                            bool isMember = row["IsMember"] != DBNull.Value ? Convert.ToBoolean(row["IsMember"]) : false;
+                            bool isMember = row["IsMember"] != DBNull.Value && Convert.ToBoolean(row["IsMember"]);
                             int visitCount = row["VisitCount"] != DBNull.Value ? Convert.ToInt32(row["VisitCount"]) : 0;
-
 
                             if (isMember)
                             {
@@ -77,14 +79,15 @@ namespace WindowsForms
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"An error occurred while loading the chart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
 
+
         private void chartVisitorTracking_Click(object sender, EventArgs e)
         {
-
+            LoadVisitorTrackingData();
         }
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -98,6 +101,13 @@ namespace WindowsForms
         {
             Form10 Eventsform = new Form10();
             Eventsform.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form5 signUpForm = new Form5();
+            signUpForm.Show();
             this.Hide();
         }
     }
