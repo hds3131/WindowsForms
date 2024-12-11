@@ -1,6 +1,2 @@
-﻿CREATE TABLE FeedbackTable (
-    Id INT PRIMARY KEY,
-    Name VARCHAR(100) NOT NULL,
-    Email VARCHAR(100) NOT NULL,
-    Feedback TEXT NOT NULL
-);
+﻿ALTER TABLE VisitorTracking
+ADD IsMember BIT NOT NULL DEFAULT 0;
