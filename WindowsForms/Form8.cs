@@ -43,6 +43,7 @@ namespace WindowsForms
             Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
+            //takes to log out screen
         }
 
         private void button7_Click_1(object sender, EventArgs e)

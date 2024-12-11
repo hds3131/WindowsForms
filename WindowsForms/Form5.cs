@@ -622,5 +622,19 @@ namespace WindowsForms
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form6 form6 = new Form6();
+            form6.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form7 form7 = new Form7();
+            form7.Show();
+            this.Hide();
+        }
     }
 }
