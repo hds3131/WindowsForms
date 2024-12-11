@@ -133,4 +133,4 @@ INSERT INTO VisitorTracking (VisitDate, PageVisited, VisitCount) VALUES
     ('2024-11-05', 'HomePage', 180),
     ('2024-11-05', 'ContactPage', 65),
     ('2024-11-05', 'AboutPage', 50);
-GO
+GO 
