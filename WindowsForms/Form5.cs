@@ -14,7 +14,7 @@ namespace WindowsForms
     public partial class Form5 : Form
     {
         private string adminId;
-        string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=mydb;Integrated Security=True;";
+        string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ServiceBasedDB"].ConnectionString;
         public Form5()
         {
             InitializeComponent();
@@ -630,6 +630,11 @@ namespace WindowsForms
         }
 
         private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
