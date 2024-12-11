@@ -102,39 +102,6 @@ namespace WindowsForms
         {
 
         }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            AddNewEvent addNewEvent = new AddNewEvent();
-            addNewEvent.ShowDialog();
-            if (addNewEvent.DialogResult == DialogResult.OK)
-            {
-                // If the event was successfully added, update the DataGridView
-                UpdateDataGridView();
-            }
-
-        }
-
-        private void dataGridView5_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Form3 form3 = new Form3();
-            form3.Show();
-            this.Hide();
-        }
-
-        private void dataGridView14_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }
+        

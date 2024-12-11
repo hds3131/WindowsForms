@@ -117,12 +117,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="adminlastform.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="adminlastform.Designer.cs">
-      <DependentUpon>adminlastform.cs</DependentUpon>
-    </Compile>
     <Compile Include="EventsPayment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,9 +197,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="adminlastform.resx">
-      <DependentUpon>adminlastform.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="EventsPayment.resx">
       <DependentUpon>EventsPayment.cs</DependentUpon>
     </EmbeddedResource>
