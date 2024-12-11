@@ -32,7 +32,7 @@ namespace WindowsForms
             string password = textBox6.Text;
 
             // Connection string for your local database
-            string connectionString = @"Server=np:\\.\pipe\LOCALDB#653b9183\tsql\query;Database=mydbs;Integrated Security=true;";
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ServiceBasedDB"].ConnectionString;
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -78,6 +78,11 @@ namespace WindowsForms
             Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

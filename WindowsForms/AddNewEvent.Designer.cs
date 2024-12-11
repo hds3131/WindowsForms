@@ -102,6 +102,7 @@
             this.textBoxEventDetails.Name = "textBoxEventDetails";
             this.textBoxEventDetails.Size = new System.Drawing.Size(250, 85);
             this.textBoxEventDetails.TabIndex = 7;
+            this.textBoxEventDetails.TextChanged += new System.EventHandler(this.textBoxEventDetails_TextChanged);
             // 
             // buttonAddEvent
             // 

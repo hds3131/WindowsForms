@@ -13,7 +13,7 @@ namespace WindowsForms
 {
     public partial class Form6 : Form
     {
-        string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=mydb;Integrated Security=True;";
+        string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ServiceBasedDB"].ConnectionString;
         public Form6()
         {
             InitializeComponent();

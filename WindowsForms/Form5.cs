@@ -43,7 +43,7 @@ namespace WindowsForms
             string email = string.Empty;
 
             // Connection string for your local database
-            string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=mydb;Integrated Security=True;";
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ServiceBasedDB"].ConnectionString;
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
