@@ -15,6 +15,11 @@ namespace WindowsForms
     {
         private string adminId;
         string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=mydb;Integrated Security=True;";
+        public Form5()
+        {
+            InitializeComponent();
+        }
+
         public Form5(string adminId)
         {
             InitializeComponent();
