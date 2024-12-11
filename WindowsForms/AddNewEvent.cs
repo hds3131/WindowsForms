@@ -14,7 +14,7 @@ namespace WindowsForms
     
     public partial class AddNewEvent : Form
     {
-        string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=mydb;Integrated Security=True;";
+        string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ServiceBasedDB"].ConnectionString;
         public AddNewEvent()
         {
             InitializeComponent();
@@ -127,6 +127,11 @@ namespace WindowsForms
         }
 
         private void dateTimePickerEventDate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxEventDetails_TextChanged(object sender, EventArgs e)
         {
 
         }
