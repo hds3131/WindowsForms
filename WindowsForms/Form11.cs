@@ -43,16 +43,15 @@ namespace WindowsForms
 
         private void button6_Click(object sender, EventArgs e)
         {
-            string name = textBox2.Text;  // Assuming a TextBox for Name
-            string email = textBox4.Text;  // Assuming a TextBox for Email
-            string feedback = textBox8.Text;  // Assuming a TextBox for Feedback
+            string name = textBox2.Text; 
+            string email = textBox4.Text;  
+            string feedback = textBox8.Text;  
 
             SubmitFeedback(name, email, feedback);
         }
 
         public void SubmitFeedback(string name, string email, string feedback)
-        {
-            // Use the connection string from App.config
+        { 
             string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ServiceBasedDB"].ConnectionString;
 
             try
