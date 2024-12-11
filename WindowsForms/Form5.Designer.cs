@@ -71,12 +71,12 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.DarkRed;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(4, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1375, 789);
+            this.dataGridView1.Size = new System.Drawing.Size(2062, 1233);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -85,12 +85,12 @@
             this.dataGridView2.BackgroundColor = System.Drawing.Color.IndianRed;
             this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(200, 12);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView2.Location = new System.Drawing.Point(300, 19);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(716, 63);
+            this.dataGridView2.Size = new System.Drawing.Size(1074, 98);
             this.dataGridView2.TabIndex = 1;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
@@ -99,12 +99,12 @@
             this.dataGridView3.BackgroundColor = System.Drawing.Color.IndianRed;
             this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(12, 91);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView3.Location = new System.Drawing.Point(18, 142);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(182, 670);
+            this.dataGridView3.Size = new System.Drawing.Size(273, 1047);
             this.dataGridView3.TabIndex = 2;
             // 
             // dataGridView4
@@ -112,12 +112,12 @@
             this.dataGridView4.BackgroundColor = System.Drawing.Color.IndianRed;
             this.dataGridView4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(200, 91);
-            this.dataGridView4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView4.Location = new System.Drawing.Point(300, 142);
+            this.dataGridView4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.RowHeadersWidth = 51;
             this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.Size = new System.Drawing.Size(716, 306);
+            this.dataGridView4.Size = new System.Drawing.Size(1074, 478);
             this.dataGridView4.TabIndex = 3;
             // 
             // dataGridView5
@@ -125,21 +125,21 @@
             this.dataGridView5.BackgroundColor = System.Drawing.Color.IndianRed;
             this.dataGridView5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(200, 405);
-            this.dataGridView5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView5.Location = new System.Drawing.Point(300, 633);
+            this.dataGridView5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.RowHeadersWidth = 51;
             this.dataGridView5.RowTemplate.Height = 24;
-            this.dataGridView5.Size = new System.Drawing.Size(716, 356);
+            this.dataGridView5.Size = new System.Drawing.Size(1074, 556);
             this.dataGridView5.TabIndex = 4;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(46, 101);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(69, 158);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 102);
+            this.pictureBox2.Size = new System.Drawing.Size(150, 159);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
@@ -157,12 +157,12 @@
             this.IsMember,
             this.DateCreated,
             this.Action});
-            this.dataGridView7.Location = new System.Drawing.Point(211, 124);
-            this.dataGridView7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView7.Location = new System.Drawing.Point(316, 194);
+            this.dataGridView7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.dataGridView7.Name = "dataGridView7";
             this.dataGridView7.RowHeadersWidth = 51;
             this.dataGridView7.RowTemplate.Height = 24;
-            this.dataGridView7.Size = new System.Drawing.Size(639, 241);
+            this.dataGridView7.Size = new System.Drawing.Size(958, 377);
             this.dataGridView7.TabIndex = 18;
             this.dataGridView7.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView7_CellContentClick);
             // 
@@ -214,12 +214,12 @@
             this.UserName1,
             this.MembershipType,
             this.Remove});
-            this.dataGridView10.Location = new System.Drawing.Point(222, 440);
-            this.dataGridView10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView10.Location = new System.Drawing.Point(333, 688);
+            this.dataGridView10.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.dataGridView10.Name = "dataGridView10";
             this.dataGridView10.RowHeadersWidth = 51;
             this.dataGridView10.RowTemplate.Height = 24;
-            this.dataGridView10.Size = new System.Drawing.Size(552, 304);
+            this.dataGridView10.Size = new System.Drawing.Size(828, 475);
             this.dataGridView10.TabIndex = 21;
             this.dataGridView10.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView10_CellContentClick);
             // 
@@ -258,9 +258,10 @@
             this.linkLabel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.linkLabel17.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel17.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel17.Location = new System.Drawing.Point(60, 298);
+            this.linkLabel17.Location = new System.Drawing.Point(1164, 48);
+            this.linkLabel17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel17.Name = "linkLabel17";
-            this.linkLabel17.Size = new System.Drawing.Size(86, 27);
+            this.linkLabel17.Size = new System.Drawing.Size(133, 44);
             this.linkLabel17.TabIndex = 45;
             this.linkLabel17.TabStop = true;
             this.linkLabel17.Text = "Logout";
@@ -271,9 +272,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.IndianRed;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(218, 101);
+            this.label1.Location = new System.Drawing.Point(327, 158);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 19);
+            this.label1.Size = new System.Drawing.Size(132, 32);
             this.label1.TabIndex = 64;
             this.label1.Text = "New login";
             // 
@@ -282,9 +284,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.IndianRed;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(219, 419);
+            this.label2.Location = new System.Drawing.Point(328, 655);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 17);
+            this.label2.Size = new System.Drawing.Size(160, 26);
             this.label2.TabIndex = 65;
             this.label2.Text = "New Members";
             // 
@@ -293,9 +296,10 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.IndianRed;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(12, 17);
+            this.label8.Location = new System.Drawing.Point(18, 27);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(153, 23);
+            this.label8.Size = new System.Drawing.Size(242, 36);
             this.label8.TabIndex = 71;
             this.label8.Text = "Togather Culture";
             // 
@@ -304,19 +308,20 @@
             this.panel1.BackColor = System.Drawing.Color.IndianRed;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Location = new System.Drawing.Point(18, 19);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(182, 63);
+            this.panel1.Size = new System.Drawing.Size(271, 96);
             this.panel1.TabIndex = 72;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.IndianRed;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(211, 31);
+            this.button1.Location = new System.Drawing.Point(316, 48);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 23);
+            this.button1.Size = new System.Drawing.Size(213, 36);
             this.button1.TabIndex = 81;
             this.button1.Text = "Members Managment";
             this.button1.UseVisualStyleBackColor = false;
@@ -325,9 +330,10 @@
             // 
             this.button2.BackColor = System.Drawing.Color.IndianRed;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(376, 32);
+            this.button2.Location = new System.Drawing.Point(564, 50);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(112, 36);
             this.button2.TabIndex = 82;
             this.button2.Text = "Events";
             this.button2.UseVisualStyleBackColor = false;
@@ -337,9 +343,10 @@
             // 
             this.button3.BackColor = System.Drawing.Color.IndianRed;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(481, 32);
+            this.button3.Location = new System.Drawing.Point(722, 50);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(121, 23);
+            this.button3.Size = new System.Drawing.Size(182, 36);
             this.button3.TabIndex = 83;
             this.button3.Text = "Visitors Tracking";
             this.button3.UseVisualStyleBackColor = false;
@@ -348,18 +355,19 @@
             // 
             this.button4.BackColor = System.Drawing.Color.IndianRed;
             this.button4.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(629, 32);
+            this.button4.Location = new System.Drawing.Point(944, 50);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(112, 36);
             this.button4.TabIndex = 84;
             this.button4.Text = "More";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // Form5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(968, 803);
+            this.ClientSize = new System.Drawing.Size(1452, 1255);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -376,7 +384,7 @@
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "Form5";
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
