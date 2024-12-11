@@ -36,7 +36,6 @@ namespace WindowsForms
             {
                 MessageBox.Show("Username, Password, and Email cannot be empty!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-
             }
 
             if (password != confirmPassword)
@@ -86,7 +85,7 @@ namespace WindowsForms
                             MessageBox.Show("Registration successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             Form1 signUpForm = new Form1();
                             signUpForm.Show();
-                            this.Hide();// Close the sign-up form after successful registration
+                            this.Hide(); // Close the sign-up form after successful registration
                         }
                         else
                         {
@@ -115,7 +114,6 @@ namespace WindowsForms
         {
             Form1 signUpForm = new Form1();
             signUpForm.Show();
-
         }
 
         private void textBox3_TextChanged_1(object sender, EventArgs e)

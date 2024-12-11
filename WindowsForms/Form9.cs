@@ -27,7 +27,16 @@ namespace WindowsForms
 
         }
 
-       
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click_1(object sender, EventArgs e)
         {
             Form8 form8 = new Form8();
@@ -38,8 +47,8 @@ namespace WindowsForms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form6 form6 = new Form6();
-            form6.Show();
+            Form10 form10 = new Form10();
+            form10.Show();
             this.Hide();
             //takes to events screen
         }
@@ -50,13 +59,6 @@ namespace WindowsForms
             form11.Show();
             this.Hide();
             //takes to feedback screen 
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Form1 form1 = new Form1();
-            form1.Show();
-            this.Hide();
         }
     }
 }
