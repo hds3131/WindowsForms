@@ -31,32 +31,31 @@ namespace WindowsForms
         
         private void button6_Click(object sender, EventArgs e)
         {
-            Form6 form6 = new Form6();
-            form6.Show();
+            Form10 form10 = new Form10();
+            form10.Show();
             this.Hide();
             //takes to events dashboard
         }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            Form9 form9 = new Form9();
-            form9.Show();
-            this.Hide();
-            //takes to community and chat screen
-        }
      
-        private void button8_Click(object sender, EventArgs e)
-        {
-            Form11 form11 = new Form11();
-            form11.Show();
-            this.Hide();
-            //takes to Feedback screen
-        }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form1 form1 = new Form1();
             form1.Show();
+            this.Hide();
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            Form9 form9 = new Form9();
+            form9.Show();
+            this.Hide();
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            Form11 form11 = new Form11();
+            form11.Show();
             this.Hide();
         }
     }

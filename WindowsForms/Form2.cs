@@ -83,7 +83,9 @@ namespace WindowsForms
                         if (result > 0)
                         {
                             MessageBox.Show("Registration successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            this.Close(); // Close the sign-up form after successful registration
+                            Form1 signUpForm = new Form1();
+                            signUpForm.Show();
+                            this.Hide(); // Close the sign-up form after successful registration
                         }
                         else
                         {

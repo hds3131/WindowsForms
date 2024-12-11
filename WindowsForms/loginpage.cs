@@ -74,8 +74,8 @@ namespace WindowsForms
                             MessageBox.Show(" login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                             // Proceed to the admin area or dashboard as needed
-                            Form5 form5 = new Form5();
-                            form5.Show();
+                            Form8 form8 = new Form8();
+                            form8.Show();
                             this.Hide();
                         }
                         else

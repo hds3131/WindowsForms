@@ -172,7 +172,28 @@ namespace WindowsForms
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Form8 form8 = new Form8();
+            form8.Show();
+            this.Hide();
+        }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form9 form9 = new Form9();
+            form9.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form11 form11 = new Form11();
+            form11.Show();
+            this.Hide();
         }
     }
 }

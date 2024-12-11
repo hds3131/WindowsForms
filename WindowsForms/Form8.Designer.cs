@@ -297,7 +297,7 @@
             this.button5.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(202, 49);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(86, 23);
             this.button5.TabIndex = 49;
             this.button5.Text = "Dashboard";
             this.button5.UseVisualStyleBackColor = false;
@@ -307,7 +307,7 @@
             // 
             this.button6.BackColor = System.Drawing.Color.Tomato;
             this.button6.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(283, 49);
+            this.button6.Location = new System.Drawing.Point(294, 49);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 50;
@@ -325,6 +325,7 @@
             this.button7.TabIndex = 51;
             this.button7.Text = "Community And Chats";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click_1);
             // 
             // button8
             // 
@@ -336,6 +337,7 @@
             this.button8.TabIndex = 52;
             this.button8.Text = "Feedback";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // Form8
             // 
