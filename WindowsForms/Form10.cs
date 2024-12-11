@@ -195,5 +195,10 @@ namespace WindowsForms
             form11.Show();
             this.Hide();
         }
+
+        private void upcomingEventsList_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            LoadUpcomingEvents();
+        }
     }
 }
