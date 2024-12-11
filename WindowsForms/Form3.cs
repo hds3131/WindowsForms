@@ -51,7 +51,7 @@ namespace WindowsForms
 
                         var dbPassword = command.ExecuteScalar() as string;
 
-                        if (dbPassword != null && BCrypt.Net.BCrypt.Verify(password, dbPassword))
+                        if (!string.IsNullOrEmpty(dbPassword) && dbPassword == password)
                         {
                             MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             // Navigate to the admin dashboard or perform other actions as needed
