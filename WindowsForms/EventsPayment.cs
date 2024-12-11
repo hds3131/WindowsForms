@@ -13,10 +13,14 @@ namespace WindowsForms
 {
     public partial class EventsPayment : Form
     {
-        public EventsPayment()
+        private string eventDetails;
+
+        public EventsPayment(string eventDetails)
         {
             InitializeComponent();
+            this.eventDetails = eventDetails;
         }
+
 
         public void SubmitPayment(string cardType, string cardNumber, string expiryDate, string cvc)
         {
@@ -149,6 +153,16 @@ namespace WindowsForms
         }
 
         private void dataGridView7_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView5_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView6_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

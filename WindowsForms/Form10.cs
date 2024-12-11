@@ -130,7 +130,16 @@ namespace WindowsForms
 
         private void BookEvent(object sender, EventArgs e)
         {
-            MessageBox.Show("Event booked successfully!", "Booking Confirmed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            string selectedEvent = upcomingEventsList.SelectedItem?.ToString();
+            if (selectedEvent == null)
+            {
+                MessageBox.Show("Please select an event to book.", "No Event Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Navigate to EventsPayment form
+            EventsPayment eventsPaymentForm = new EventsPayment(selectedEvent);
+            eventsPaymentForm.Show();
         }
 
         private void CancelBooking(object sender, EventArgs e)
@@ -199,6 +208,11 @@ namespace WindowsForms
         private void upcomingEventsList_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             LoadUpcomingEvents();
+        }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }

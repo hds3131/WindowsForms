@@ -79,7 +79,7 @@
             this.upcomingEventsList.Location = new System.Drawing.Point(352, 223);
             this.upcomingEventsList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.upcomingEventsList.Name = "upcomingEventsList";
-            this.upcomingEventsList.Size = new System.Drawing.Size(391, 132);
+            this.upcomingEventsList.Size = new System.Drawing.Size(728, 164);
             this.upcomingEventsList.TabIndex = 4;
             this.upcomingEventsList.SelectedIndexChanged += new System.EventHandler(this.upcomingEventsList_SelectedIndexChanged_1);
             // 
@@ -280,6 +280,7 @@
             this.linkLabel1.TabIndex = 55;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Logout";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked_1);
             // 
             // textBox1
             // 
