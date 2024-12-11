@@ -67,6 +67,12 @@ namespace WindowsForms
         }
 
 
+        private void BookEventFromCalendar(string eventDetails)
+        {
+            // Navigate to EventsPayment form with the selected event
+            EventsPayment eventsPaymentForm = new EventsPayment(eventDetails);
+            eventsPaymentForm.Show();
+        }
 
 
         private void ShowEventsOnDate(object sender, DateRangeEventArgs e)
@@ -84,11 +90,13 @@ namespace WindowsForms
                     SqlDataReader reader = command.ExecuteReader();
 
                     string eventDetails = "";
+                    string selectedEvent = null;
                     while (reader.Read())
                     {
                         string eventName = reader["EventName"].ToString();
                         string details = reader["EventDetails"].ToString();
                         eventDetails += $"Event: {eventName}\nDetails: {details}\n\n";
+                        selectedEvent = $"{eventName} - {e.Start:dd MMM yyyy}";
                     }
 
                     if (!string.IsNullOrEmpty(eventDetails))
@@ -96,9 +104,9 @@ namespace WindowsForms
                         eventDetails += "Would you like to book this event?";
                         DialogResult result = MessageBox.Show(eventDetails, "Event Details", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
-                        if (result == DialogResult.Yes)
+                        if (result == DialogResult.Yes && selectedEvent != null)
                         {
-                            BookEvent(sender, e);
+                            BookEventFromCalendar(selectedEvent);
                         }
                     }
                     else
@@ -113,34 +121,36 @@ namespace WindowsForms
             }
         }
 
+
         private void NavigateToDashboard(object sender, EventArgs e)
         {
-            // Add code to navigate to the dashboard
+            
         }
 
         private void NavigateToCommunity(object sender, EventArgs e)
         {
-            // Add code to navigate to community and chats
+            
         }
 
         private void ShowMoreOptions(object sender, EventArgs e)
         {
-            // Add code to show more options
+            
         }
 
         private void BookEvent(object sender, EventArgs e)
         {
             string selectedEvent = upcomingEventsList.SelectedItem?.ToString();
-            if (selectedEvent == null)
+            if (string.IsNullOrEmpty(selectedEvent))
             {
                 MessageBox.Show("Please select an event to book.", "No Event Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Navigate to EventsPayment form
+            
             EventsPayment eventsPaymentForm = new EventsPayment(selectedEvent);
             eventsPaymentForm.Show();
         }
+
 
         private void CancelBooking(object sender, EventArgs e)
         {
