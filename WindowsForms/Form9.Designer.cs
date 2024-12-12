@@ -39,14 +39,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.dataGridView8 = new System.Windows.Forms.DataGridView();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -60,7 +55,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -176,31 +170,11 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Logout";
             // 
-            // dataGridView8
-            // 
-            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView8.Location = new System.Drawing.Point(190, 442);
-            this.dataGridView8.Name = "dataGridView8";
-            this.dataGridView8.RowHeadersWidth = 51;
-            this.dataGridView8.RowTemplate.Height = 24;
-            this.dataGridView8.Size = new System.Drawing.Size(310, 41);
-            this.dataGridView8.TabIndex = 27;
-            // 
-            // textBox12
-            // 
-            this.textBox12.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Location = new System.Drawing.Point(207, 454);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(281, 15);
-            this.textBox12.TabIndex = 28;
-            this.textBox12.Text = "                                    Search";
-            // 
             // textBox13
             // 
             this.textBox13.BackColor = System.Drawing.Color.Red;
             this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox13.Location = new System.Drawing.Point(173, 489);
+            this.textBox13.Location = new System.Drawing.Point(173, 129);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(100, 22);
             this.textBox13.TabIndex = 29;
@@ -210,7 +184,7 @@
             // 
             this.textBox14.BackColor = System.Drawing.Color.Red;
             this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox14.Location = new System.Drawing.Point(173, 543);
+            this.textBox14.Location = new System.Drawing.Point(173, 238);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(100, 22);
             this.textBox14.TabIndex = 30;
@@ -220,41 +194,11 @@
             // 
             this.textBox15.BackColor = System.Drawing.Color.Red;
             this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox15.Location = new System.Drawing.Point(173, 599);
+            this.textBox15.Location = new System.Drawing.Point(173, 329);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(100, 22);
             this.textBox15.TabIndex = 31;
             this.textBox15.Text = "ARU";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.IndianRed;
-            this.button3.Location = new System.Drawing.Point(413, 489);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(87, 32);
-            this.button3.TabIndex = 34;
-            this.button3.Text = "Notification";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.IndianRed;
-            this.button6.Location = new System.Drawing.Point(413, 542);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(87, 35);
-            this.button6.TabIndex = 37;
-            this.button6.Text = "Notification";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.IndianRed;
-            this.button9.Location = new System.Drawing.Point(413, 593);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(87, 34);
-            this.button9.TabIndex = 40;
-            this.button9.Text = "Notification";
-            this.button9.UseVisualStyleBackColor = false;
             // 
             // textBox16
             // 
@@ -320,20 +264,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
-            this.ClientSize = new System.Drawing.Size(683, 660);
+            this.ClientSize = new System.Drawing.Size(681, 660);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox15);
             this.Controls.Add(this.textBox14);
             this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.dataGridView8);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
@@ -355,7 +294,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -373,14 +311,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.DataGridView dataGridView8;
-        private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
