@@ -64,5 +64,21 @@ namespace WindowsForms
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Technology and AI is now saved as an interest.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }    
+
     }
 }

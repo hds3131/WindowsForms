@@ -19,7 +19,7 @@ namespace WindowsForms
 
         private void Form9_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -59,6 +59,11 @@ namespace WindowsForms
             form11.Show();
             this.Hide();
             //takes to feedback screen 
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
