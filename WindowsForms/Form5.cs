@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,11 +14,8 @@ namespace WindowsForms
     public partial class Form5 : Form
     {
         private string adminId;
-        string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ServiceBasedDB"].ConnectionString;
-        public Form5()
-        {
-            InitializeComponent();
-        }
+        string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename=E:\Database1.mdf;Integrated Security=True;";
+
 
         public Form5(string adminId)
         {
@@ -32,7 +29,7 @@ namespace WindowsForms
             string email = GetAdminEmail(adminId);
 
             // Display the email in your label
-           
+            adminEmail.Text = "Email: " + email;
 
             LoadLatestUsers();
             LoadNewMembers();
@@ -42,27 +39,40 @@ namespace WindowsForms
         {
             string email = string.Empty;
 
-            // Use the same connection string for all queries
+            // Connection string for your local database
+            //string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=mydb;Integrated Security=True;";
+            string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename=E:\Database1.mdf;Integrated Security=True;";
+
+
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
                 {
+                    // Open the connection
                     connection.Open();
 
-                    // Query to get the email based on AdminID
-                    string query = "SELECT Email FROM admin WHERE AdminID = @AdminID";
-
+                    // Query to get the email based on AdminId
+                    string query = "SELECT Email FROM admin WHERE AdminID = @AdminId";
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@AdminID", adminId);
+                        // Add parameter to prevent SQL injection
+                        command.Parameters.AddWithValue("@AdminId", adminId);
 
+                        // Execute the query and fetch the email
                         object result = command.ExecuteScalar();
-                        email = result != null ? result.ToString() : "Email not found";
+                        if (result != DBNull.Value)
+                        {
+                            email = result.ToString();
+                        }
+                        else
+                        {
+                            email = "Email not found"; // Fallback if no email is found
+                        }
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Error fetching admin email: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
 
@@ -76,24 +86,28 @@ namespace WindowsForms
             {
                 try
                 {
+                    // Open the connection
                     connection.Open();
 
-                    // Query to retrieve users
-                    string query = "SELECT UserID, Username, DateCreated, isBlocked FROM Users ORDER BY DateCreated DESC";
+                    // Query to retrieve all users sorted by DateCreated
+                    string query = "SELECT UserID, Username, CreatedAt, isBlocked FROM Users ORDER BY CreatedAt DESC";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
+                        // Execute the query and fill the DataTable
                         using (SqlDataAdapter adapter = new SqlDataAdapter(command))
                         {
                             DataTable userDataTable = new DataTable();
                             adapter.Fill(userDataTable);
+
+                            // Bind data to dataGridView5
                             BindUsersToDataGridView(userDataTable);
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Error loading users: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -110,7 +124,7 @@ namespace WindowsForms
                 foreach (DataRow row in userDataTable.Rows)
                 {
                     string username = row["Username"].ToString();
-                    DateTime dateCreated = Convert.ToDateTime(row["DateCreated"]);
+                    DateTime dateCreated = Convert.ToDateTime(row["CreatedAt"]);
                     int userID = Convert.ToInt32(row["UserID"]);
                     bool isBlocked = Convert.ToBoolean(row["isBlocked"]);  // Fetching the isBlocked value
 
@@ -195,11 +209,11 @@ namespace WindowsForms
                 {
                     connection.Open();
 
-                    // Query to retrieve new members
+                    // Query to retrieve new members, sorted by DateCreated in descending order
                     string query = "SELECT u.Username, m.MembershipTypeID, m.UserID " +
                                    "FROM Member m " +
                                    "JOIN Users u ON m.UserID = u.UserID " +
-                                   "ORDER BY u.DateCreated DESC";
+                                   "ORDER BY u.CreatedAt DESC";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -207,17 +221,18 @@ namespace WindowsForms
                         {
                             DataTable membersDataTable = new DataTable();
                             adapter.Fill(membersDataTable);
+
+                            // Bind the fetched members to dataGridView10
                             BindNewMembersToDataGridView(membersDataTable);
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Error loading new members: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
-
 
         private void BindNewMembersToDataGridView(DataTable membersDataTable)
         {
@@ -531,10 +546,10 @@ namespace WindowsForms
         {
             Form7 form7 = new Form7();
 
-
+            
             form7.Show();
 
-
+        
             //this.Hide();
         }
 
@@ -616,25 +631,6 @@ namespace WindowsForms
         private void label7_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form6 form6 = new Form6();
-            form6.Show();
-            this.Hide();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Form7 form7 = new Form7();
-            form7.Show();
-            this.Hide();
         }
     }
 }
