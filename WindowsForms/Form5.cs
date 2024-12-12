@@ -74,37 +74,55 @@ namespace WindowsForms
 
         private void AddEventButton_Click(object sender, EventArgs e)
         {
-            // Add a new event to the Events table
-            string eventName = Prompt.ShowDialog("Enter Event Name", "Add Event");
-            string eventDateStr = Prompt.ShowDialog("Enter Event Date (yyyy-MM-dd)", "Add Event");
-
-            if (DateTime.TryParse(eventDateStr, out DateTime eventDate) && !string.IsNullOrWhiteSpace(eventName))
+            try
             {
+                // Prompt user to enter event name and date
+                string eventName = Prompt.ShowDialog("Enter Event Name", "Add Event");
+                string eventDateStr = Prompt.ShowDialog("Enter Event Date (yyyy-MM-dd)", "Add Event");
+
+                if (string.IsNullOrWhiteSpace(eventName) || string.IsNullOrWhiteSpace(eventDateStr))
+                {
+                    MessageBox.Show("Event Name and Date cannot be empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (!DateTime.TryParse(eventDateStr, out DateTime eventDate))
+                {
+                    MessageBox.Show("Invalid Date format. Please use yyyy-MM-dd.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // SQL query to insert the event into the database
                 string query = "INSERT INTO Events (EventName, EventDate) VALUES (@EventName, @EventDate)";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    try
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        connection.Open();
-                        SqlCommand command = new SqlCommand(query, connection);
                         command.Parameters.AddWithValue("@EventName", eventName);
                         command.Parameters.AddWithValue("@EventDate", eventDate);
 
-                        command.ExecuteNonQuery();
-                        MessageBox.Show("Event added successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LoadEvents(); // Refresh the Events ListBox
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show($"Error adding event: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        int rowsAffected = command.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Event added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            LoadEvents(); // Reload the Events list after successful addition
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to add event. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Invalid event name or date.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        
+
+            
         }
 
         private void RemoveEventButton_Click(object sender, EventArgs e)
