@@ -70,25 +70,41 @@ namespace WindowsForms
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button9_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Technology and AI saved as an interest!");
+            //saves ai&technology interest
 
         }
         private void button10_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Health and Well-Being saved as an interest!");
-
+            //saves health&well-being interest
         }
         private void button11_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Business and Community saved as an interest!");
+            //saves business&community interest 
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form10 form10 = new Form10();
+            form10.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form10 form10 = new Form10();
+            form10.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form10 form10 = new Form10();
+            form10.Show();
         }
     }
 }
