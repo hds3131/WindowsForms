@@ -77,7 +77,18 @@ namespace WindowsForms
 
         private void button9_Click(object sender, EventArgs e)
         {
-        }    
+            MessageBox.Show("Technology and AI saved as an interest!");
 
+        }
+        private void button10_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Health and Well-Being saved as an interest!");
+
+        }
+        private void button11_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Business and Community saved as an interest!");
+
+        }
     }
 }
