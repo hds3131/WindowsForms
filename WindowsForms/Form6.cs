@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +13,8 @@ namespace WindowsForms
 {
     public partial class Form6 : Form
     {
-        string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ServiceBasedDB"].ConnectionString;
+        //string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=mydb;Integrated Security=True;";
+        string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename=E:\Database1.mdf;Integrated Security=True;";
         public Form6()
         {
             InitializeComponent();
@@ -35,7 +36,7 @@ namespace WindowsForms
         private void UpdateDataGridView()
         {
             // Create SQL query to fetch required data from the Event table, ordered by Date in descending order
-            string query = "SELECT EventName, Date, Location, EventType FROM [dbo].[Event] ORDER BY Date DESC";
+            string query = "SELECT EventName, EventDate, Location, EventType FROM [dbo].[Events] ORDER BY EventDate DESC";
 
             // Create a connection to the database
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -56,7 +57,7 @@ namespace WindowsForms
                     // Loop through the rows in the DataTable to set the EventStatus column
                     foreach (DataRow row in dt.Rows)
                     {
-                        DateTime eventDate = Convert.ToDateTime(row["Date"]);
+                        DateTime eventDate = Convert.ToDateTime(row["EventDate"]);
                         if (eventDate.Date == DateTime.Today) // Event is today
                         {
                             row["EventStatus"] = "Today";
