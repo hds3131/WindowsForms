@@ -366,7 +366,7 @@
             this.textBox2.Size = new System.Drawing.Size(147, 22);
             this.textBox2.TabIndex = 54;
             this.textBox2.Text = "Health & Well-being";
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            
             // 
             // textBox3
             // 

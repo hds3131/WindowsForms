@@ -124,11 +124,11 @@
             // 
             this.dataGridView5.BackgroundColor = System.Drawing.Color.Salmon;
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(155, 82);
+            this.dataGridView5.Location = new System.Drawing.Point(164, 268);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.RowHeadersWidth = 51;
             this.dataGridView5.RowTemplate.Height = 24;
-            this.dataGridView5.Size = new System.Drawing.Size(301, 150);
+            this.dataGridView5.Size = new System.Drawing.Size(301, 160);
             this.dataGridView5.TabIndex = 4;
             this.dataGridView5.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView5_CellContentClick);
             // 
@@ -136,11 +136,11 @@
             // 
             this.dataGridView6.BackgroundColor = System.Drawing.Color.Salmon;
             this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(492, 82);
+            this.dataGridView6.Location = new System.Drawing.Point(479, 268);
             this.dataGridView6.Name = "dataGridView6";
             this.dataGridView6.RowHeadersWidth = 51;
             this.dataGridView6.RowTemplate.Height = 24;
-            this.dataGridView6.Size = new System.Drawing.Size(296, 150);
+            this.dataGridView6.Size = new System.Drawing.Size(296, 160);
             this.dataGridView6.TabIndex = 5;
             this.dataGridView6.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView6_CellContentClick);
             // 
@@ -148,20 +148,20 @@
             // 
             this.dataGridView7.BackgroundColor = System.Drawing.Color.Salmon;
             this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Location = new System.Drawing.Point(164, 255);
+            this.dataGridView7.Location = new System.Drawing.Point(164, 93);
             this.dataGridView7.Name = "dataGridView7";
             this.dataGridView7.RowHeadersWidth = 51;
             this.dataGridView7.RowTemplate.Height = 24;
-            this.dataGridView7.Size = new System.Drawing.Size(624, 150);
+            this.dataGridView7.Size = new System.Drawing.Size(611, 150);
             this.dataGridView7.TabIndex = 6;
             this.dataGridView7.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView7_CellContentClick);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(26, 82);
+            this.pictureBox1.Location = new System.Drawing.Point(21, 93);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 114);
+            this.pictureBox1.Size = new System.Drawing.Size(100, 102);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -170,7 +170,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.DarkGray;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(703, 12);
+            this.button1.Location = new System.Drawing.Point(703, 15);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 33);
             this.button1.TabIndex = 8;
@@ -235,14 +235,14 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(144, 23);
             this.textBox1.TabIndex = 13;
-            this.textBox1.Text = "Togather Culture";
+            this.textBox1.Text = "Together Culture";
             // 
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.Salmon;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(164, 92);
+            this.textBox2.Location = new System.Drawing.Point(174, 282);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 15);
             this.textBox2.TabIndex = 14;
@@ -253,7 +253,7 @@
             this.textBox3.BackColor = System.Drawing.Color.Salmon;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(164, 120);
+            this.textBox3.Location = new System.Drawing.Point(174, 310);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 15);
             this.textBox3.TabIndex = 15;
@@ -262,7 +262,7 @@
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.Color.Tomato;
-            this.textBox4.Location = new System.Drawing.Point(274, 120);
+            this.textBox4.Location = new System.Drawing.Point(280, 306);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(168, 22);
             this.textBox4.TabIndex = 16;
@@ -272,7 +272,7 @@
             this.textBox5.BackColor = System.Drawing.Color.Salmon;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(164, 148);
+            this.textBox5.Location = new System.Drawing.Point(174, 340);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 15);
             this.textBox5.TabIndex = 17;
@@ -281,7 +281,7 @@
             // textBox6
             // 
             this.textBox6.BackColor = System.Drawing.Color.Tomato;
-            this.textBox6.Location = new System.Drawing.Point(274, 148);
+            this.textBox6.Location = new System.Drawing.Point(280, 336);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(168, 22);
             this.textBox6.TabIndex = 18;
@@ -291,18 +291,19 @@
             this.textBox7.BackColor = System.Drawing.Color.Salmon;
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox7.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(164, 176);
+            this.textBox7.Location = new System.Drawing.Point(174, 368);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 15);
             this.textBox7.TabIndex = 19;
             this.textBox7.Text = "CVC";
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // textBox8
             // 
             this.textBox8.BackColor = System.Drawing.Color.Tomato;
-            this.textBox8.Location = new System.Drawing.Point(274, 176);
+            this.textBox8.Location = new System.Drawing.Point(378, 364);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(54, 22);
+            this.textBox8.Size = new System.Drawing.Size(70, 22);
             this.textBox8.TabIndex = 20;
             // 
             // textBox9
@@ -310,7 +311,7 @@
             this.textBox9.BackColor = System.Drawing.Color.Salmon;
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox9.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(503, 92);
+            this.textBox9.Location = new System.Drawing.Point(491, 282);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(100, 15);
             this.textBox9.TabIndex = 21;
@@ -321,7 +322,7 @@
             this.textBox10.BackColor = System.Drawing.Color.Salmon;
             this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox10.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(503, 120);
+            this.textBox10.Location = new System.Drawing.Point(491, 310);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(100, 15);
             this.textBox10.TabIndex = 22;
@@ -330,7 +331,7 @@
             // textBox11
             // 
             this.textBox11.BackColor = System.Drawing.Color.Tomato;
-            this.textBox11.Location = new System.Drawing.Point(609, 120);
+            this.textBox11.Location = new System.Drawing.Point(586, 310);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(166, 22);
             this.textBox11.TabIndex = 23;
@@ -340,7 +341,7 @@
             this.textBox12.BackColor = System.Drawing.Color.Salmon;
             this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox12.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(503, 148);
+            this.textBox12.Location = new System.Drawing.Point(491, 340);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(100, 15);
             this.textBox12.TabIndex = 24;
@@ -349,7 +350,7 @@
             // textBox13
             // 
             this.textBox13.BackColor = System.Drawing.Color.Tomato;
-            this.textBox13.Location = new System.Drawing.Point(609, 148);
+            this.textBox13.Location = new System.Drawing.Point(586, 336);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(166, 22);
             this.textBox13.TabIndex = 25;
@@ -359,7 +360,7 @@
             this.textBox14.BackColor = System.Drawing.Color.Salmon;
             this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox14.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(503, 176);
+            this.textBox14.Location = new System.Drawing.Point(491, 368);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(100, 15);
             this.textBox14.TabIndex = 26;
@@ -368,9 +369,9 @@
             // textBox15
             // 
             this.textBox15.BackColor = System.Drawing.Color.Tomato;
-            this.textBox15.Location = new System.Drawing.Point(609, 176);
+            this.textBox15.Location = new System.Drawing.Point(680, 364);
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(49, 22);
+            this.textBox15.Size = new System.Drawing.Size(72, 22);
             this.textBox15.TabIndex = 27;
             // 
             // textBox16
@@ -378,18 +379,19 @@
             this.textBox16.BackColor = System.Drawing.Color.Salmon;
             this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox16.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(173, 266);
+            this.textBox16.Location = new System.Drawing.Point(174, 105);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(100, 15);
             this.textBox16.TabIndex = 28;
             this.textBox16.Text = "Billing";
+            this.textBox16.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
             // 
             // textBox17
             // 
             this.textBox17.BackColor = System.Drawing.Color.Salmon;
             this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox17.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(173, 294);
+            this.textBox17.Location = new System.Drawing.Point(174, 147);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(100, 15);
             this.textBox17.TabIndex = 29;
@@ -398,9 +400,9 @@
             // textBox18
             // 
             this.textBox18.BackColor = System.Drawing.Color.Tomato;
-            this.textBox18.Location = new System.Drawing.Point(279, 294);
+            this.textBox18.Location = new System.Drawing.Point(247, 140);
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(100, 22);
+            this.textBox18.Size = new System.Drawing.Size(201, 22);
             this.textBox18.TabIndex = 30;
             // 
             // textBox19
@@ -408,7 +410,7 @@
             this.textBox19.BackColor = System.Drawing.Color.Salmon;
             this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox19.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.Location = new System.Drawing.Point(173, 322);
+            this.textBox19.Location = new System.Drawing.Point(174, 172);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(100, 15);
             this.textBox19.TabIndex = 31;
@@ -417,9 +419,9 @@
             // textBox20
             // 
             this.textBox20.BackColor = System.Drawing.Color.Tomato;
-            this.textBox20.Location = new System.Drawing.Point(279, 322);
+            this.textBox20.Location = new System.Drawing.Point(247, 168);
             this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(100, 22);
+            this.textBox20.Size = new System.Drawing.Size(201, 22);
             this.textBox20.TabIndex = 32;
             // 
             // textBox21
@@ -427,7 +429,7 @@
             this.textBox21.BackColor = System.Drawing.Color.Salmon;
             this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox21.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox21.Location = new System.Drawing.Point(173, 350);
+            this.textBox21.Location = new System.Drawing.Point(174, 200);
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(100, 15);
             this.textBox21.TabIndex = 33;
@@ -436,18 +438,18 @@
             // textBox22
             // 
             this.textBox22.BackColor = System.Drawing.Color.Tomato;
-            this.textBox22.Location = new System.Drawing.Point(279, 350);
+            this.textBox22.Location = new System.Drawing.Point(247, 196);
             this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(281, 22);
+            this.textBox22.Size = new System.Drawing.Size(505, 22);
             this.textBox22.TabIndex = 34;
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.Salmon;
+            this.button6.BackColor = System.Drawing.Color.DarkSalmon;
             this.button6.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(358, 204);
+            this.button6.Location = new System.Drawing.Point(378, 392);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(70, 27);
             this.button6.TabIndex = 35;
             this.button6.Text = "Pay";
             this.button6.UseVisualStyleBackColor = false;
@@ -457,9 +459,9 @@
             // 
             this.button7.BackColor = System.Drawing.Color.DarkSalmon;
             this.button7.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(713, 196);
+            this.button7.Location = new System.Drawing.Point(680, 392);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(62, 31);
+            this.button7.Size = new System.Drawing.Size(72, 27);
             this.button7.TabIndex = 36;
             this.button7.Text = "Pay";
             this.button7.UseVisualStyleBackColor = false;
