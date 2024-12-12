@@ -68,8 +68,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(2044, 1273);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
+            
             // dataGridView2
             // 
             this.dataGridView2.BackgroundColor = System.Drawing.Color.IndianRed;
@@ -82,7 +81,6 @@
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(1486, 98);
             this.dataGridView2.TabIndex = 1;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // dataGridView3
             // 
@@ -148,7 +146,6 @@
             this.linkLabel17.TabIndex = 45;
             this.linkLabel17.TabStop = true;
             this.linkLabel17.Text = "Logout";
-            this.linkLabel17.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel17_LinkClicked);
             // 
             // label8
             // 
@@ -212,7 +209,6 @@
             this.eventsListBox.Name = "eventsListBox";
             this.eventsListBox.Size = new System.Drawing.Size(1473, 356);
             this.eventsListBox.TabIndex = 84;
-            this.eventsListBox.SelectedIndexChanged += new System.EventHandler(this.eventsListBox_SelectedIndexChanged);
             // 
             // upcomingEventsLabel
             // 
@@ -267,7 +263,6 @@
             this.paymentsListBox.Name = "paymentsListBox";
             this.paymentsListBox.Size = new System.Drawing.Size(1473, 356);
             this.paymentsListBox.TabIndex = 88;
-            this.paymentsListBox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -292,7 +287,6 @@
             this.button1.TabIndex = 90;
             this.button1.Text = "Visitors Tracking";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form5
             // 
@@ -319,7 +313,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "Form5";
             this.Text = "Form5";
-            this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();

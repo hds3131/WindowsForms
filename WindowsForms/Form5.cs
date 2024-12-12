@@ -16,99 +16,100 @@ namespace WindowsForms
             LoadPayments();
         }
 
-        // Load events from the database
         private void LoadEvents()
         {
+            // Load data from the Events table into the Events ListBox
+            string query = "SELECT EventName, EventDate FROM Events ORDER BY EventDate";
+
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
                 {
                     connection.Open();
-                    string query = "SELECT EventID, EventName, EventDate FROM Events ORDER BY EventDate";
-                    SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
-                    DataTable dataTable = new DataTable();
-                    adapter.Fill(dataTable);
+                    SqlCommand command = new SqlCommand(query, connection);
+                    SqlDataReader reader = command.ExecuteReader();
 
-                    eventsListBox.Items.Clear();
-                    foreach (DataRow row in dataTable.Rows)
+                    eventsListBox.Items.Clear(); // Clear existing items
+                    while (reader.Read())
                     {
-                        string eventInfo = $"{row["EventID"]} - {row["EventName"]} - {Convert.ToDateTime(row["EventDate"]).ToString("dd MMM yyyy")}";
-                        eventsListBox.Items.Add(eventInfo);
+                        string eventName = reader["EventName"].ToString();
+                        DateTime eventDate = Convert.ToDateTime(reader["EventDate"]);
+                        eventsListBox.Items.Add($"{eventName} - {eventDate:dd MMM yyyy}");
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Error loading events: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
 
-        // Load payments from the database
         private void LoadPayments()
         {
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                try
-                {
-                    connection.Open();
-                    string query = "SELECT p.PaymentID, e.EventName, p.PaymentDate, p.Amount FROM Payments p JOIN Events e ON p.EventID = e.EventID ORDER BY p.PaymentDate";
-                    SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
-                    DataTable dataTable = new DataTable();
-                    adapter.Fill(dataTable);
-
-                    paymentsListBox.Items.Clear();
-                    foreach (DataRow row in dataTable.Rows)
-                    {
-                        string paymentInfo = $"PaymentID: {row["PaymentID"]}, Event: {row["EventName"]}, Date: {Convert.ToDateTime(row["PaymentDate"]).ToString("dd MMM yyyy")}, Amount: ${row["Amount"]}";
-                        paymentsListBox.Items.Add(paymentInfo);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-
-        // Add a new event
-        private void addEventButton_Click(object sender, EventArgs e)
-        {
-            string eventName = Prompt.ShowDialog("Enter Event Name:", "Add Event");
-            string eventDateInput = Prompt.ShowDialog("Enter Event Date (YYYY-MM-DD):", "Add Event");
-
-            if (!DateTime.TryParse(eventDateInput, out DateTime eventDate))
-            {
-                MessageBox.Show("Invalid date format!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+            // Load data from the PaymentDetails table into the Payments ListBox
+            string query = "SELECT PaymentName, PaymentDate FROM PaymentDetails ORDER BY PaymentDate";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
                 {
                     connection.Open();
-                    string query = "INSERT INTO Events (EventName, EventDate) VALUES (@EventName, @EventDate)";
                     SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@EventName", eventName);
-                    command.Parameters.AddWithValue("@EventDate", eventDate);
+                    SqlDataReader reader = command.ExecuteReader();
 
-                    int result = command.ExecuteNonQuery();
-                    if (result > 0)
+                    paymentsListBox.Items.Clear(); // Clear existing items
+                    while (reader.Read())
                     {
-                        MessageBox.Show("Event added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LoadEvents();
+                        string paymentName = reader["PaymentName"].ToString();
+                        DateTime paymentDate = Convert.ToDateTime(reader["PaymentDate"]);
+                        paymentsListBox.Items.Add($"{paymentName} - {paymentDate:dd MMM yyyy}");
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Error loading payments: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
 
-        // Remove an event
-        private void removeEventButton_Click(object sender, EventArgs e)
+        private void AddEventButton_Click(object sender, EventArgs e)
         {
+            // Add a new event to the Events table
+            string eventName = Prompt.ShowDialog("Enter Event Name", "Add Event");
+            string eventDateStr = Prompt.ShowDialog("Enter Event Date (yyyy-MM-dd)", "Add Event");
+
+            if (DateTime.TryParse(eventDateStr, out DateTime eventDate) && !string.IsNullOrWhiteSpace(eventName))
+            {
+                string query = "INSERT INTO Events (EventName, EventDate) VALUES (@EventName, @EventDate)";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    try
+                    {
+                        connection.Open();
+                        SqlCommand command = new SqlCommand(query, connection);
+                        command.Parameters.AddWithValue("@EventName", eventName);
+                        command.Parameters.AddWithValue("@EventDate", eventDate);
+
+                        command.ExecuteNonQuery();
+                        MessageBox.Show("Event added successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadEvents(); // Refresh the Events ListBox
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error adding event: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid event name or date.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void RemoveEventButton_Click(object sender, EventArgs e)
+        {
+            // Remove the selected event from the Events table
             if (eventsListBox.SelectedItem == null)
             {
                 MessageBox.Show("Please select an event to remove.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -116,53 +117,54 @@ namespace WindowsForms
             }
 
             string selectedEvent = eventsListBox.SelectedItem.ToString();
-            int eventId = int.Parse(selectedEvent.Split('-')[0].Trim());
+            string[] parts = selectedEvent.Split('-');
+            string eventName = parts[0].Trim();
+
+            string query = "DELETE FROM Events WHERE EventName = @EventName";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
                 {
                     connection.Open();
-                    string query = "DELETE FROM Events WHERE EventID = @EventID";
                     SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@EventID", eventId);
+                    command.Parameters.AddWithValue("@EventName", eventName);
 
-                    int result = command.ExecuteNonQuery();
-                    if (result > 0)
-                    {
-                        MessageBox.Show("Event removed successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LoadEvents();
-                    }
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Event removed successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadEvents(); // Refresh the Events ListBox
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Error removing event: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
     }
 
-    // Helper class for input dialogs
+    // Utility class for input dialog
     public static class Prompt
     {
         public static string ShowDialog(string text, string caption)
         {
             Form prompt = new Form()
             {
-                Width = 500,
-                Height = 150,
+                Width = 400,
+                Height = 200,
+                FormBorderStyle = FormBorderStyle.FixedDialog,
                 Text = caption,
                 StartPosition = FormStartPosition.CenterScreen
             };
-            Label textLabel = new Label() { Left = 50, Top = 20, Text = text };
-            TextBox textBox = new TextBox() { Left = 50, Top = 50, Width = 400 };
-            Button confirmation = new Button() { Text = "Ok", Left = 350, Width = 100, Top = 80, DialogResult = DialogResult.OK };
+            Label textLabel = new Label() { Left = 20, Top = 20, Text = text, Width = 340 };
+            TextBox textBox = new TextBox() { Left = 20, Top = 50, Width = 340 };
+            Button confirmation = new Button() { Text = "OK", Left = 270, Width = 90, Top = 100, DialogResult = DialogResult.OK };
+            confirmation.Click += (sender, e) => { prompt.Close(); };
             prompt.Controls.Add(textBox);
             prompt.Controls.Add(confirmation);
             prompt.Controls.Add(textLabel);
             prompt.AcceptButton = confirmation;
 
-            return prompt.ShowDialog() == DialogResult.OK ? textBox.Text : "";
+            return prompt.ShowDialog() == DialogResult.OK ? textBox.Text : string.Empty;
         }
     }
 }

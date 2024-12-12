@@ -77,7 +77,6 @@ namespace WindowsForms
 
         private void button9_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Technology and AI is now saved as an interest.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }    
 
     }
