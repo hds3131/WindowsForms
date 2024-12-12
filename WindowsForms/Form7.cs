@@ -42,13 +42,13 @@ namespace WindowsForms
 
                         Series membersSeries = new Series("Members")
                         {
-                            ChartType = SeriesChartType.Line,
+                            ChartType = SeriesChartType.Bar,
                             BorderWidth = 2
                         };
 
                         Series nonMembersSeries = new Series("Non-Members")
                         {
-                            ChartType = SeriesChartType.Line,
+                            ChartType = SeriesChartType.Bar,
                             BorderWidth = 2
                         };
 
