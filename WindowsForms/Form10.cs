@@ -66,7 +66,6 @@ namespace WindowsForms
             }
         }
 
-
         private void BookEventFromCalendar(string eventDetails)
         {
             // Navigate to EventsPayment form with the selected event
