@@ -189,7 +189,7 @@ namespace WindowsForms
 
             // Generate a random number
             Random random = new Random();
-            int index = random.Next(possibleAmounts.Length); // Get a random index
+            int index = random.Next(possibleAmounts.Length);
 
             // Set the label text
             label1.Text = $"Amount Due: £{possibleAmounts[index]}";
