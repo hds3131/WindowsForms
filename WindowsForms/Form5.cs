@@ -14,8 +14,8 @@ namespace WindowsForms
     public partial class Form5 : Form
     {
         private string adminId;
-        string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename=E:\Database1.mdf;Integrated Security=True;";
-
+        //string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename=E:\Database1.mdf;Integrated Security=True;";
+        string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ServiceBasedDB"].ConnectionString;
 
         public Form5(string adminId)
         {
@@ -41,8 +41,8 @@ namespace WindowsForms
 
             // Connection string for your local database
             //string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=mydb;Integrated Security=True;";
-            string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename=E:\Database1.mdf;Integrated Security=True;";
-
+            //string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename=E:\Database1.mdf;Integrated Security=True;";
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ServiceBasedDB"].ConnectionString;
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

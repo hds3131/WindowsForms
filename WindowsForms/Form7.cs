@@ -106,7 +106,7 @@ namespace WindowsForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form5 signUpForm = new Form5();
+            Form5 signUpForm = new Form5("192129");
             signUpForm.Show();
             this.Hide();
         }

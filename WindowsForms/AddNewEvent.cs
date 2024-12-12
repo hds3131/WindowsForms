@@ -15,7 +15,8 @@ namespace WindowsForms
     public partial class AddNewEvent : Form
     {
         //string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=mydb;Integrated Security=True;";
-        string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename=E:\DATABASE1.MDF;Integrated Security=True;";
+        string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ServiceBasedDB"].ConnectionString;
+        //string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename=E:\DATABASE1.MDF;Integrated Security=True;";
         public AddNewEvent()
         {
             InitializeComponent();
