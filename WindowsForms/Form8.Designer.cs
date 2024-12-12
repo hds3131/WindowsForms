@@ -303,11 +303,12 @@
             // 
             // button5
             // 
+            this.button5.AutoSize = true;
             this.button5.BackColor = System.Drawing.Color.Tomato;
             this.button5.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(202, 49);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(86, 23);
+            this.button5.Size = new System.Drawing.Size(86, 25);
             this.button5.TabIndex = 49;
             this.button5.Text = "Dashboard";
             this.button5.UseVisualStyleBackColor = false;
@@ -315,11 +316,12 @@
             // 
             // button6
             // 
+            this.button6.AutoSize = true;
             this.button6.BackColor = System.Drawing.Color.Tomato;
             this.button6.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(294, 49);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(75, 25);
             this.button6.TabIndex = 50;
             this.button6.Text = "Events";
             this.button6.UseVisualStyleBackColor = false;
@@ -327,11 +329,12 @@
             // 
             // button7
             // 
+            this.button7.AutoSize = true;
             this.button7.BackColor = System.Drawing.Color.Tomato;
             this.button7.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Location = new System.Drawing.Point(375, 49);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(161, 23);
+            this.button7.Size = new System.Drawing.Size(161, 25);
             this.button7.TabIndex = 51;
             this.button7.Text = "Community And Chats";
             this.button7.UseVisualStyleBackColor = false;
@@ -339,11 +342,12 @@
             // 
             // button8
             // 
+            this.button8.AutoSize = true;
             this.button8.BackColor = System.Drawing.Color.Tomato;
             this.button8.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Location = new System.Drawing.Point(542, 49);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.Size = new System.Drawing.Size(75, 25);
             this.button8.TabIndex = 52;
             this.button8.Text = "Feedback";
             this.button8.UseVisualStyleBackColor = false;
@@ -382,10 +386,11 @@
             // 
             // button9
             // 
+            this.button9.AutoSize = true;
             this.button9.BackColor = System.Drawing.SystemColors.Control;
             this.button9.Location = new System.Drawing.Point(487, 477);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.Size = new System.Drawing.Size(76, 26);
             this.button9.TabIndex = 56;
             this.button9.Text = "Interested";
             this.button9.UseVisualStyleBackColor = false;
@@ -393,21 +398,25 @@
             // 
             // button10
             // 
+            this.button10.AutoSize = true;
             this.button10.Location = new System.Drawing.Point(487, 519);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.Size = new System.Drawing.Size(76, 26);
             this.button10.TabIndex = 57;
             this.button10.Text = "Interested";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
+            this.button11.AutoSize = true;
             this.button11.Location = new System.Drawing.Point(487, 562);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
+            this.button11.Size = new System.Drawing.Size(76, 26);
             this.button11.TabIndex = 58;
             this.button11.Text = "Interested";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // dataGridView11
             // 
