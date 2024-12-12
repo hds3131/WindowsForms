@@ -59,5 +59,10 @@ namespace WindowsForms
             form11.Show();
             this.Hide();
         }
+
+        private void dataGridView7_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
