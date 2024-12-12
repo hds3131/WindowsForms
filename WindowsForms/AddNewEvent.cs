@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +14,8 @@ namespace WindowsForms
     
     public partial class AddNewEvent : Form
     {
-        string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ServiceBasedDB"].ConnectionString;
+        //string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=mydb;Integrated Security=True;";
+        string connectionString = @"Server=(localdb)\MSSQLLocalDB;AttachDbFilename=E:\DATABASE1.MDF;Integrated Security=True;";
         public AddNewEvent()
         {
             InitializeComponent();
@@ -54,8 +55,8 @@ namespace WindowsForms
 
             // Create SQL Insert query
             string insertQuery = @"
-    INSERT INTO [dbo].[Event] 
-    ([EventName], [Date], [GuestCount], [Participants], [Location], [EventDetails], [EventType]) 
+    INSERT INTO [dbo].[Events] 
+    ([EventName], [EventDate], [GuestCount], [Participants], [Location], [EventDetails], [EventType]) 
     VALUES 
     (@EventName, @EventDate, @GuestCount, @Participants, @Location, @EventDetails, @EventType)";
 
@@ -122,16 +123,6 @@ namespace WindowsForms
         }
 
         private void labelParticipants_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePickerEventDate_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxEventDetails_TextChanged(object sender, EventArgs e)
         {
 
         }
