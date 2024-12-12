@@ -107,9 +107,9 @@ namespace WindowsForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form5 signUpForm = new Form5("192129");
-            signUpForm.Show();
-            this.Hide();
+            Form5 form5 = new Form5();
+            form5.Show();
+
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
