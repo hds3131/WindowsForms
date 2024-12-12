@@ -17,7 +17,8 @@ namespace WindowsForms
         public Form7()
         {
             InitializeComponent();
-            
+            LoadVisitorTrackingData();
+
         }
 
         private void LoadVisitorTrackingData()
