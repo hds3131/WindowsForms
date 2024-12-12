@@ -114,6 +114,7 @@ namespace WindowsForms
         {
             Form1 signUpForm = new Form1();
             signUpForm.Show();
+            this.Hide();
         }
 
         private void textBox3_TextChanged_1(object sender, EventArgs e)
