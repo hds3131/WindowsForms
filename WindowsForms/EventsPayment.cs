@@ -18,6 +18,7 @@ namespace WindowsForms
         public EventsPayment(string eventDetails)
         {
             InitializeComponent();
+            GenerateRandomAmount();
             this.eventDetails = eventDetails;
         }
 
@@ -181,30 +182,17 @@ namespace WindowsForms
         {
 
         }
-        private void PaymentsForm_Load(object sender, EventArgs e)
+        private void GenerateRandomAmount()
         {
-            // Calculate the amount due (5 pounds per booking)
-            int amountDue = Form10.bookingCount * 5;
+            // Define the possible amounts
+            int[] possibleAmounts = { 5, 10, 15, 20, 30, 40 };
 
-            // Display the amount in the label
-            label1.Text = $"Amount Due: £{amountDue}";
-        }
+            // Generate a random number
+            Random random = new Random();
+            int index = random.Next(possibleAmounts.Length); // Get a random index
 
-        private void btnPayNow_Click(object sender, EventArgs e)
-        {
-            // Reset the booking count after payment
-            Form10.bookingCount = 0;
-
-            // Update the label to show no amount due
-            label1.Text = "Amount Due: £0";
-
-            // Show a confirmation message
-            MessageBox.Show("Payment successful! Thank you.");
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            // Set the label text
+            label1.Text = $"Amount Due: £{possibleAmounts[index]}";
         }
     }
 }

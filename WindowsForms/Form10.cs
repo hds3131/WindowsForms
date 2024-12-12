@@ -70,6 +70,7 @@ namespace WindowsForms
         private void BookEventFromCalendar(string eventDetails)
         {
             // Navigate to EventsPayment form with the selected event
+            bookingCount++;
             EventsPayment eventsPaymentForm = new EventsPayment(eventDetails);
             eventsPaymentForm.Show();
         }
@@ -107,6 +108,7 @@ namespace WindowsForms
                         if (result == DialogResult.Yes && selectedEvent != null)
                         {
                             BookEventFromCalendar(selectedEvent);
+                            
                         }
                     }
                     else
