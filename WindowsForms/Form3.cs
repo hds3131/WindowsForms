@@ -57,6 +57,7 @@ namespace WindowsForms
                             // Navigate to the admin dashboard or perform other actions as needed
                             Form5 form5 = new Form5();
                             form5.Show();
+                            this.Hide();
 
                         }
                         else

@@ -93,18 +93,21 @@ namespace WindowsForms
         {
             Form10 form10 = new Form10();
             form10.Show();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Form10 form10 = new Form10();
             form10.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Form10 form10 = new Form10();
             form10.Show();
+            this.Hide();
         }
     }
 }

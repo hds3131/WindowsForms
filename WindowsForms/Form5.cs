@@ -158,6 +158,13 @@ namespace WindowsForms
                 }
             }
         }
+
+        private void linkLabel17_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+            this.Hide();
+        }
     }
 
     // Utility class for input dialog

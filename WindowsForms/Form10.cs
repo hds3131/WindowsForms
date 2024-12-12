@@ -148,10 +148,11 @@ namespace WindowsForms
                 return;
             }
 
-            bookingCount++;
+            
             MessageBox.Show($"Event booked successfully! Total bookings: {bookingCount}");
             EventsPayment eventsPaymentForm = new EventsPayment(selectedEvent);
             eventsPaymentForm.Show();
+            this.Hide();
         }
 
 
