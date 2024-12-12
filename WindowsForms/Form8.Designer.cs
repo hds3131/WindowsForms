@@ -118,11 +118,11 @@
             this.dataGridView5.BackgroundColor = System.Drawing.Color.Tomato;
             this.dataGridView5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(167, 329);
+            this.dataGridView5.Location = new System.Drawing.Point(167, 318);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.RowHeadersWidth = 51;
             this.dataGridView5.RowTemplate.Height = 24;
-            this.dataGridView5.Size = new System.Drawing.Size(160, 122);
+            this.dataGridView5.Size = new System.Drawing.Size(177, 113);
             this.dataGridView5.TabIndex = 4;
             // 
             // dataGridView6
@@ -130,11 +130,11 @@
             this.dataGridView6.BackgroundColor = System.Drawing.Color.Tomato;
             this.dataGridView6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(167, 482);
+            this.dataGridView6.Location = new System.Drawing.Point(167, 463);
             this.dataGridView6.Name = "dataGridView6";
             this.dataGridView6.RowHeadersWidth = 51;
             this.dataGridView6.RowTemplate.Height = 24;
-            this.dataGridView6.Size = new System.Drawing.Size(464, 118);
+            this.dataGridView6.Size = new System.Drawing.Size(464, 137);
             this.dataGridView6.TabIndex = 5;
             // 
             // dataGridView7
@@ -203,7 +203,7 @@
             this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox20.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox20.ForeColor = System.Drawing.Color.White;
-            this.textBox20.Location = new System.Drawing.Point(177, 456);
+            this.textBox20.Location = new System.Drawing.Point(177, 437);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(100, 20);
             this.textBox20.TabIndex = 39;
@@ -251,7 +251,7 @@
             this.textBox23.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox23.Location = new System.Drawing.Point(31, 48);
             this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(142, 23);
+            this.textBox23.Size = new System.Drawing.Size(143, 23);
             this.textBox23.TabIndex = 44;
             this.textBox23.Text = "Together Culture";
             this.textBox23.TextChanged += new System.EventHandler(this.textBox23_TextChanged);
@@ -285,7 +285,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(217, 419);
+            this.button4.Location = new System.Drawing.Point(220, 394);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 48;
@@ -344,7 +344,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(643, 612);
+            this.ClientSize = new System.Drawing.Size(649, 612);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
