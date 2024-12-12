@@ -6,6 +6,7 @@ namespace WindowsForms
 {
     public partial class Form10 : Form
     {
+        public static int bookingCount = 0;
         public Form10()
         {
             InitializeComponent();
@@ -145,7 +146,8 @@ namespace WindowsForms
                 return;
             }
 
-            
+            bookingCount++;
+            MessageBox.Show($"Event booked successfully! Total bookings: {bookingCount}");
             EventsPayment eventsPaymentForm = new EventsPayment(selectedEvent);
             eventsPaymentForm.Show();
         }
